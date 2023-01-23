@@ -1,0 +1,138 @@
+:root {
+
+    --background-color-dark: #303346;
+    --background-color-darker: #252837;
+    --background-color-darkest: #1d1f2b;
+
+    --main-color: #4059ac;
+    --main-color-hover: #384b8a;
+    
+    --text-color: #F3DFC1;
+    --text-color-darker: #DDBEA8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-color-darkest);
+}
+.container {
+    margin: 0;
+    /* padding: 0; */
+    /* display: grid;
+    
+    grid-template-columns: repeat(5, 1fr); */
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.day {
+    display: grid;
+    grid-template-rows: repeat(9, 500px) !important; 
+}
+
+.weekday {
+    padding: 10px;
+}
+
+.container > .weekday > h1 {
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+    background-color: var(--background-color-dark);
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+.period {
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+    background-color: var(--background-color-dark);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.period_time {
+    font-size: 1.5em;
+    text-align: end;
+}
+
+.subject {
+
+    margin: 10px 0 10px 0;
+    
+    color: var(--text-color);
+    background-color: var(--background-color-darkest);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+    /* not selectable */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin: 0 10px 0 10px;
+}
+
+.checkbox::before {
+    
+}
+
+.info {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+
+.subject_name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subject_short_name {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.subject_long_name {
+}
+
+.room_name {
+    font-size: 1em;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + .subject {
+    background-color: var(--main-color-hover);
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -100;
+}
+
