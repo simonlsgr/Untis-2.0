@@ -1053,11 +1053,11 @@
                     }
                 ],
                 "hasInfo": false,
-                "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "code": 120,
+                "cellState": "CANCEL",
+                "priority": 8,
                 "is": {
-                    "standard": true,
+                    "cancelled": true,
                     "event": false
                 },
                 "roomCapacity": 0,
@@ -1139,11 +1139,11 @@
                     }
                 ],
                 "hasInfo": false,
-                "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "code": 120,
+                "cellState": "CANCEL",
+                "priority": 8,
                 "is": {
-                    "standard": true,
+                    "cancelled": true,
                     "event": false
                 },
                 "roomCapacity": 0,
@@ -1313,11 +1313,11 @@
                     }
                 ],
                 "hasInfo": false,
-                "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "code": 120,
+                "cellState": "CANCEL",
+                "priority": 8,
                 "is": {
-                    "standard": true,
+                    "cancelled": true,
                     "event": false
                 },
                 "roomCapacity": 0,
@@ -1525,11 +1525,11 @@
                     }
                 ],
                 "hasInfo": false,
-                "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "code": 120,
+                "cellState": "CANCEL",
+                "priority": 8,
                 "is": {
-                    "standard": true,
+                    "cancelled": true,
                     "event": false
                 },
                 "roomCapacity": 0,

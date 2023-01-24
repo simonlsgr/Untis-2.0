@@ -25,7 +25,7 @@ body {
     
     grid-template-columns: repeat(5, 1fr); */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
 
@@ -50,6 +50,11 @@ body {
 
 }
 
+.period_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 .period {
     padding: 10px;
     margin: 10px;
@@ -59,6 +64,7 @@ body {
     background-color: var(--background-color-dark);
     color: var(--text-color);
     text-align: center;
+    width: calc((100%)/5);
 }
 
 .period_time {
