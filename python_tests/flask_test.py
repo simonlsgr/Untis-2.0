@@ -4,6 +4,19 @@ import sys
 
 app = flask.Flask(__name__)
 
+
+def periods_in_a_week(timetable_formatted):
+    list_of_periods = []
+    for i, j in enumerate(timetable_formatted):
+        for k, l in enumerate(j):
+            for m, n in enumerate(l):
+                if [n["startTime"], n["endTime"]] not in list_of_periods:
+                    list_of_periods.append([n["startTime"], n["endTime"]])
+                
+
+    list_of_periods.sort()
+    return list_of_periods
+
 @app.route("/")
 def index():
     with open("test_output.json", "r") as f:
@@ -14,85 +27,25 @@ def index():
     subjects = subjects["data"]["result"]["data"]["elements"]
     
     placeholder = ["", "", "", "", ""]
-    # times = []
-    # for i, j in enumerate(data):
-    #     for k, l in enumerate(j):
-    #         if not any(d["startTime"] == l[0]["startTime"] for d in times):
-    #             times.append({"startTime": l[0]["startTime"], "endTime": l[0]["endTime"]})
-    
-    # # sort times
-    # times.sort(key=lambda x: x["startTime"])
-    # print(json.dumps(times, indent=4), file=sys.stderr)
-    # times_placeholder = "<div class=\"time\">"
-    # for i, j in enumerate(times):
-    #     times_placeholder += f"""<div class="time">{j["startTime"]}-{j["endTime"]}</div>"""
-    # times_placeholder += "</div>"
-            
-    
-    ## weekdays (from 0 to 4)
-    # for i, j in enumerate(data):
-    #     counter += 1
-    #     # periods (from 0 to n)
-    #     for k, l in enumerate(j):
-    #         counter += 1
-    #         placeholder[i] += f"""<form class="period"><div class="period_time">{l[0]["startTime"]}-{l[0]["endTime"]}</div>"""
-    #         counter = 0
-    #         for m, n in enumerate(l):
-    #             counter += 1
-                
-    #             try:
-    #                 for o, p in enumerate(subjects):
-    #                     counter += 1
-    #                     if p["id"] == n["elements"][0]["id"]:
-    #                         subject = "<div class=\"subject_name\"><div class=\"subject_short_name\">"+ p["name"] + "</div><div class=\"subject_long_name\">" + p["longName"] + "</div></div>"
-    #                     elif p["id"] == n["elements"][1]["id"]:
-    #                         if p["name"] == p["longName"]:
-    #                             room = "<div class=\"room_name\">" + p["name"] + "</div>"
-    #                         else:
-    #                             room = "<div class=\"room_name\">" + p["name"] + " (" + p["longName"] + ")</div>"
-    #                 # subject = str(n["elements"][0]["id"])
-    #                 # room = str(n["elements"][1]["id"])
-    #                 id_for_checkbox = n["id"]
-    #                 placeholder[i] += f"""<input type="checkbox" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{subject}{room}</div></label>"""
-    #             except IndexError:
-    #                 continue
-    #                 # print(placeholder[i], file=sys.stderr)
-                    
-                    
-    #         placeholder[i] += "</form>"
+
+
+    list_of_periods = periods_in_a_week(data)
     
     timetable_html_element = ""
-    # loop through the lessons of a day
-    # for index_lesson, lesson in enumerate(data[0]):
-    #     # loop through each day
-    # for index_day, day in enumerate(data):
-    #     timetable_html_element += f"""<div class="day"><div class="day_name">{index_day}</div>"""
-    #     for index_lessons_in_day, lessons_in_day in enumerate(day):
-    #         timetable_html_element += f"""<form class="period"><div class="period_time"></div>"""
-    #         for index_lessons_in_day_lesson, lessons_in_day_lesson in enumerate(lessons_in_day):
-    #             try:
-    #                 for o, p in enumerate(subjects):
-    #                     if p["id"] == lessons_in_day_lesson["elements"][0]["id"]:
-    #                         subject = "<div class=\"subject_name\"><div class=\"subject_short_name\">"+ p["name"] + "</div><div class=\"subject_long_name\">" + p["longName"] + "</div></div>"
-    #                     elif p["id"] == lessons_in_day_lesson["elements"][1]["id"]:
-    #                         if p["name"] == p["longName"]:
-                                # room = "<div class=\"room_name\">" + p["name"] + str(lessons_in_day_lesson["startTime"]) + "</div>"
-    #                         else:
-    #                             room = "<div class=\"room_name\">" + p["name"] + " (" + p["longName"] +str(lessons_in_day_lesson["startTime"]) +  ")</div>"
-    #                 # subject = str(n["elements"][0]["id"])
-    #                 # room = str(n["elements"][1]["id"])
-    #                 id_for_checkbox = lessons_in_day_lesson["id"]
-    #                 timetable_html_element += f"""<input type="checkbox" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{subject}{room}</div></label>"""
-    #                 # placeholder[i] += f"""<input type="checkbox" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{subject}{room}</div></label>"""
-    #             except IndexError:
-    #                 continue
-    #                 # print(placeholder[i], file=sys.stderr)
-    #         timetable_html_element += "</form>"    
-    #     timetable_html_element += "</div>"
-    #         # print(lessons_in_day, file=sys.stderr)
+    
+    
+    timetable_html_element += f"""<form class="timetable_wrapper_form">"""
+    timetable_html_element += f"""<div class="timetable_wrapper">"""
+    
+
+    weekdays = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]
+    timetable_html_element += f"""<div class="weekday"></div>"""
+    for index_tag, tag in enumerate(data):
+        timetable_html_element += f"""<div class="weekday">{weekdays[index_tag]}</div>"""
+        
         
     for index_stunde in range(len(data[0])):
-        timetable_html_element += f"""<div class="period_wrapper">"""
+        timetable_html_element += f"""<div class="period"><div class="period_time">{list_of_periods[index_stunde][0]}-{list_of_periods[index_stunde][1]}</div></div>"""
         for index_tag, tag in enumerate(data):
             timetable_html_element += f"""<div class="period"><div class="period_time">{index_stunde}</div>"""
             for index_fach, fach in enumerate(tag[index_stunde]):
@@ -115,9 +68,11 @@ def index():
                                     raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
                 id_for_checkbox = fach["id"]
                 timetable_html_element += f"""<input type="checkbox" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
-                print(fach_name, "→" ,fach_lang_name, raum_name, "("+raum_lang_name+")")
             timetable_html_element += "</div>"
-        timetable_html_element += "</div>"
+        
+    timetable_html_element += "</div>"
+    timetable_html_element += f"""<input type="submit" value="Submit">"""
+    timetable_html_element += "</form>"
             
             
             
