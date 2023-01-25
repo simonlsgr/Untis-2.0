@@ -17,8 +17,11 @@ def periods_in_a_week(timetable_formatted):
     list_of_periods.sort()
     return list_of_periods
 
-@app.route("/")
+
+@app.route("/", methods=["GET", "POST"])
 def index():
+    
+    
     with open("test_output.json", "r") as f:
         data = json.load(f)
     with open("test.json", "r") as f:
@@ -26,7 +29,31 @@ def index():
     
     subjects = subjects["data"]["result"]["data"]["elements"]
     
-    placeholder = ["", "", "", "", ""]
+    list_of_subjects_id = []
+    
+    for i, j in enumerate(data):
+        for k, l in enumerate(j):
+            for m, n in enumerate(l):
+                if n["id"] not in list_of_subjects_id:
+                    list_of_subjects_id.append(n["id"])
+    
+    if flask.request.method == "POST":
+        # for i, j in enumerate(list_of_checked_subjects):
+        #     if flask.request.form.get(j):
+        #         print("test")
+        # return flask.redirect(flask.url_for("index"))
+        # print(list_of_checked_subjects)
+        for i, j in enumerate(list_of_subjects_id):
+            if flask.request.form.get(str(j)):
+                print(str(j))
+        # if flask.request.form.getlist("376850"):
+        #     print(flask.request.form.getlist("376850"))
+    list_of_subjects_id.clear()
+    
+    
+    
+    
+    
 
 
     list_of_periods = periods_in_a_week(data)
@@ -34,7 +61,7 @@ def index():
     timetable_html_element = ""
     
     
-    timetable_html_element += f"""<form class="timetable_wrapper_form">"""
+    timetable_html_element += f"""<form action="/" class="timetable_wrapper_form" method="POST">"""
     timetable_html_element += f"""<div class="timetable_wrapper">"""
     
 
@@ -67,7 +94,7 @@ def index():
                                 elif raum_name != raum_lang_name:
                                     raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
                 id_for_checkbox = fach["id"]
-                timetable_html_element += f"""<input type="checkbox" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
+                timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
             timetable_html_element += "</div>"
         
     timetable_html_element += "</div>"
@@ -75,15 +102,7 @@ def index():
     timetable_html_element += "</form>"
             
             
-            
-        
-        
-            
-                
-        
-            
-                        
-            
+
         
     
     
@@ -97,19 +116,10 @@ def index():
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-{timetable_html_element}
-</div>
-
+<div class="container">{timetable_html_element}</div>
 </body>
 </html>"""
     return html
-
-# <div class="weekday monday"><h1>Monday</h1><div class="day">{placeholder[0]}</div></div>
-# <div class="weekday tuesday"><h1>Tuesday</h1><div class="day">{placeholder[1]}</div></div>
-# <div class="weekday wednesday"><h1>Wednesday</h1><div class="day">{placeholder[2]}</div></div>
-# <div class="weekday thursday"><h1>Thursday</h1><div class="day">{placeholder[3]}</div></div>
-# <div class="weekday friday"><h1>Friday</h1><div class="day">{placeholder[4]}</div></div>
 
 if __name__ == "__main__":
     app.run(debug=True)
