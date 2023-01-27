@@ -2253,11 +2253,11 @@
                                 }
                             ],
                             "hasInfo": false,
-                            "code": 0,
-                            "cellState": "STANDARD",
-                            "priority": 5,
+                            "code": 120,
+                            "cellState": "CANCEL",
+                            "priority": 8,
                             "is": {
-                                "standard": true,
+                                "cancelled": true,
                                 "event": false
                             },
                             "roomCapacity": 0,
@@ -4688,11 +4688,11 @@
                             "lessonNumber": 60701,
                             "lessonCode": "LESSON",
                             "lessonText": "",
-                            "periodText": "",
-                            "hasPeriodText": false,
+                            "periodText": "Raumänderung",
+                            "hasPeriodText": true,
                             "periodInfo": "",
                             "periodAttachments": [],
-                            "substText": "",
+                            "substText": "Raumänderung",
                             "date": 20230131,
                             "startTime": 800,
                             "endTime": 845,
@@ -4706,18 +4706,18 @@
                                 },
                                 {
                                     "type": 4,
-                                    "id": 184,
-                                    "orgId": 0,
+                                    "id": 185,
+                                    "orgId": 184,
                                     "missing": false,
-                                    "state": "REGULAR"
+                                    "state": "SUBSTITUTED"
                                 }
                             ],
-                            "hasInfo": false,
+                            "hasInfo": true,
                             "code": 0,
-                            "cellState": "STANDARD",
-                            "priority": 5,
+                            "cellState": "ROOMSUBSTITUTION",
+                            "priority": 3,
                             "is": {
-                                "standard": true,
+                                "roomSubstitution": true,
                                 "event": false
                             },
                             "roomCapacity": 0,
@@ -5426,11 +5426,11 @@
                             "lessonNumber": 60600,
                             "lessonCode": "LESSON",
                             "lessonText": "",
-                            "periodText": "",
-                            "hasPeriodText": false,
+                            "periodText": "Raumänderung",
+                            "hasPeriodText": true,
                             "periodInfo": "",
                             "periodAttachments": [],
-                            "substText": "",
+                            "substText": "Raumänderung",
                             "date": 20230131,
                             "startTime": 800,
                             "endTime": 845,
@@ -5444,18 +5444,18 @@
                                 },
                                 {
                                     "type": 4,
-                                    "id": 180,
-                                    "orgId": 0,
+                                    "id": 183,
+                                    "orgId": 180,
                                     "missing": false,
-                                    "state": "REGULAR"
+                                    "state": "SUBSTITUTED"
                                 }
                             ],
-                            "hasInfo": false,
+                            "hasInfo": true,
                             "code": 0,
-                            "cellState": "STANDARD",
-                            "priority": 5,
+                            "cellState": "ROOMSUBSTITUTION",
+                            "priority": 3,
                             "is": {
-                                "standard": true,
+                                "roomSubstitution": true,
                                 "event": false
                             },
                             "roomCapacity": 0,
@@ -6816,7 +6816,7 @@
                     }
                 ]
             },
-            "lastImportTimestamp": 1674553484425
+            "lastImportTimestamp": 1674717900721
         }
     }
 }
