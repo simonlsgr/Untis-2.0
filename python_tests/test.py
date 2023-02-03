@@ -19,11 +19,11 @@ class WebUntis_request:
         
         url_get_cookies = f'https://ikarus.webuntis.com/WebUntis/?school={self.schoolname}#/basic/timetable'
 
-        response = requests.get(url_get_cookies)
+        response_get_cookies = requests.get(url_get_cookies)
 
-        jsessionid_cookies = response.headers['Set-Cookie'].split(';')[0].split('=')[1]
+        jsessionid_cookies = response_get_cookies.headers['Set-Cookie'].split(';')[0].split('=')[1]
 
-        schoolname_cookies = response.headers['Set-Cookie'].split(';')[4].split('=')[2]
+        schoolname_cookies = response_get_cookies.headers['Set-Cookie'].split(';')[4].split('=')[2]
 
         url = "https://ikarus.webuntis.com/WebUntis/api/public/timetable/weekly/data"
 
@@ -45,16 +45,10 @@ class WebUntis_request:
 
         response = requests.request("GET", url, data=payload, headers=headers, params=querystring)
 
-        with open("python_tests/test_"+self.element_id+".json", "w") as f:
+        with open("python_tests/src/webuntis_data/data_unformatted_"+self.element_id+".json", "w") as f:
             f.write(response.text)
-
-        ###
-
-        blocked_ids = []
-
-
         
-        with open("python_tests/test_"+self.element_id+".json", "r") as f:
+        with open("python_tests/src/webuntis_data/data_unformatted_"+self.element_id+".json", "r") as f:
             data = json.load(f)
 
 
@@ -104,12 +98,17 @@ class WebUntis_request:
         date_list = new_date_list
             
 
-        with open("python_tests/test_output_"+self.element_id+".json", "w") as f:
+        with open("python_tests/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
             f.write(json.dumps(date_list, indent=4))
-            
+        
+        subjects = response.text
+        subjects = json.loads(subjects)["data"]["result"]["data"]["elements"]
+        with open("python_tests/src/webuntis_data/subjects_"+self.element_id+".json", "w") as f:
+            f.write(json.dumps(subjects))
         return None
     
 
 if __name__ == "__main__":
-    WebUntis_request(1, 475, "2023-01-30", "hh5864").API_call()
+    WebUntis_request(1, 475, "2023-02-06", "hh5864").API_call()
+    WebUntis_request(1, 187, "2023-02-06", "hh5846").API_call()
       

@@ -38,28 +38,39 @@ def generate_foreColor(hex_color: str):
 
 @app.route("/")
 def index():
-    with open("src/timetable.json", "r") as f:
-        timetable_input = json.load(f)
+    # with open("src/timetable.json", "r") as f:
+    #     timetable_input = json.load(f)
     
-    if timetable_input:
-        return str(timetable_input)
-    else:
-        return str(timetable_input)
+    # if timetable_input:
+    #     return str(timetable_input)
+    # else:
+    #     return str(timetable_input)
+    return flask.redirect("/selecting_subjects")
     
 
 @app.route("/selecting_subjects", methods=["GET", "POST"])
 def selecting_subjects():
     
-    with open("test_output_187.json", "r") as f:
+    with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
-    with open("test_187.json", "r") as f:
-        subjects = json.load(f)
+    with open("python_tests/src/webuntis_data/subjects_187.json", "r") as f:
+        KaiFU_subjects = json.load(f)
         
-    subjects = subjects["data"]["result"]["data"]["elements"]
+        
+    with open("python_tests/src/webuntis_data/data_formatted_475.json", "r") as f:
+        hlg_data = json.load(f)
+    with open("python_tests/src/webuntis_data/subjects_475.json", "r") as f:
+        hlg_subjects = json.load(f)
+
+    
     
 
-    list_of_periods = periods_in_a_week(KaiFU_data)
     
+    if len(KaiFU_data[0]) >= len(hlg_data[0]):
+        list_of_periods = periods_in_a_week(KaiFU_data)
+    elif len(KaiFU_data[0]) < len(hlg_data[0]):
+        list_of_periods = periods_in_a_week(hlg_data)
+        
     timetable_html_element = ""
     
     
@@ -73,30 +84,56 @@ def selecting_subjects():
         timetable_html_element += f"""<div class="weekday">{weekdays[index_tag]}</div>"""
         
         
-    for index_stunde in range(len(KaiFU_data[0])):
+    for index_stunde in range(len(list_of_periods)-1):
         timetable_html_element += f"""<div class="period"><div class="period_time">{list_of_periods[index_stunde][0]}-{list_of_periods[index_stunde][1]}</div></div>"""
-        for index_tag, tag in enumerate(KaiFU_data):
+        for index_tag in range(5):
             timetable_html_element += f"""<div class="period"><div class="period_time">{index_stunde}</div>"""
-            for index_fach, fach in enumerate(tag[index_stunde]):
-                for index_element, element in enumerate(fach["elements"]):
-                    for index_fach_informationen, fach_informationen in enumerate(subjects):
-                        if fach_informationen["id"] == element["id"]:
-                            
-                            if element["type"] == 3:
-                                fach_name = fach_informationen["name"]
-                                fach_lang_name = fach_informationen["longName"]
+            try:
+                for index_fach, fach in enumerate(KaiFU_data[index_tag][index_stunde]):
+                    for index_element, element in enumerate(fach["elements"]):
+                        for index_fach_informationen, fach_informationen in enumerate(KaiFU_subjects):
+                            if fach_informationen["id"] == element["id"]:
                                 
-                                fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
+                                if element["type"] == 3:
+                                    fach_name = fach_informationen["name"]
+                                    fach_lang_name = fach_informationen["longName"]
+                                    
+                                    fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
+                                    
+                                elif element["type"] == 4:
+                                    raum_name = fach_informationen["name"]
+                                    raum_lang_name = fach_informationen["longName"]
+                                    if raum_name == raum_lang_name:
+                                        raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
+                                    elif raum_name != raum_lang_name:
+                                        raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
+                    id_for_checkbox = fach["id"]
+                    timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
+            except IndexError:
+                pass
+            try:
+                for index_fach, fach in enumerate(hlg_data[index_tag][index_stunde]):
+                    for index_element, element in enumerate(fach["elements"]):
+                        for index_fach_informationen, fach_informationen in enumerate(hlg_subjects):
+                            if fach_informationen["id"] == element["id"]:
                                 
-                            elif element["type"] == 4:
-                                raum_name = fach_informationen["name"]
-                                raum_lang_name = fach_informationen["longName"]
-                                if raum_name == raum_lang_name:
-                                    raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
-                                elif raum_name != raum_lang_name:
-                                    raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
-                id_for_checkbox = fach["id"]
-                timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
+                                if element["type"] == 3:
+                                    fach_name = fach_informationen["name"]
+                                    fach_lang_name = fach_informationen["longName"]
+                                    
+                                    fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
+                                    
+                                elif element["type"] == 4:
+                                    raum_name = fach_informationen["name"]
+                                    raum_lang_name = fach_informationen["longName"]
+                                    if raum_name == raum_lang_name:
+                                        raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
+                                    elif raum_name != raum_lang_name:
+                                        raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
+                    id_for_checkbox = fach["id"]
+                    timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
+            except IndexError:
+                pass
             timetable_html_element += "</div>"
         
     timetable_html_element += "</div>"
@@ -123,37 +160,37 @@ def selecting_subjects():
 
 @app.route("/personalized_timetable", methods=["GET", "POST"])
 def selected_subjects():
-    with open("test_output_187.json", "r") as f:
+    with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
-    with open("test_187.json", "r") as f:
-        subjects = json.load(f)
+    with open("python_tests/src/webuntis_data/subjects_187.json", "r") as f:
+        KaiFU_subjects = json.load(f)
         
-    subjects = subjects["data"]["result"]["data"]["elements"]
     
     
-    list_of_subjects_id = []
+    
+    list_of_KaiFU_subjects_id = []
     
     for i, j in enumerate(KaiFU_data):
         for k, l in enumerate(j):
             for m, n in enumerate(l):
-                if n["id"] not in list_of_subjects_id:
-                    list_of_subjects_id.append(n["id"])
+                if n["id"] not in list_of_KaiFU_subjects_id:
+                    list_of_KaiFU_subjects_id.append(n["id"])
     
     
-    selected_subjects_lesson_id = []
+    selected_KaiFU_subjects_lesson_id = []
     blocked_ids = []
     if flask.request.method == "POST":
-        for i, j in enumerate(list_of_subjects_id):
+        for i, j in enumerate(list_of_KaiFU_subjects_id):
             if flask.request.form.get(str(j)):
                 for k, l in enumerate(KaiFU_data):
                     for m, n in enumerate(l):
                         for o, p in enumerate(n):
                             if p["id"] == j:
-                                selected_subjects_lesson_id.append(p["lessonId"])
+                                selected_KaiFU_subjects_lesson_id.append(p["lessonId"])
         for i, j in enumerate(KaiFU_data):
             for k, l in enumerate(j):
                 for m, n in enumerate(l):
-                    if n["lessonId"] not in selected_subjects_lesson_id:
+                    if n["lessonId"] not in selected_KaiFU_subjects_lesson_id:
                         blocked_ids.append(n["lessonId"])
             
     
@@ -182,7 +219,7 @@ def selected_subjects():
             for index_fach, fach in enumerate(tag[index_stunde]):
                 if fach["lessonId"] not in blocked_ids:
                     for index_element, element in enumerate(fach["elements"]):
-                        for index_fach_informationen, fach_informationen in enumerate(subjects):
+                        for index_fach_informationen, fach_informationen in enumerate(KaiFU_subjects):
                             if fach_informationen["id"] == element["id"]:
                                 
                                 
@@ -215,7 +252,7 @@ def selected_subjects():
     
     
     timetable_html_element += f"""<div class="wrapper">"""
-    for i, j in enumerate(subjects):
+    for i, j in enumerate(KaiFU_subjects):
         try:
             if j["type"] == 3:
                 try:
