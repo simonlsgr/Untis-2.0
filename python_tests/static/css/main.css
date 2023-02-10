@@ -9,6 +9,8 @@
     
     --text-color: #F3DFC1;
     --text-color-darker: #DDBEA8;
+
+    
 }
 
 body {
@@ -89,18 +91,39 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 10px;
     
 }
 
 .period_time {
     font-size: 1.5em;
-    text-align: end;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.period_time:empty {
+    display: none;
+}
+
+.period_time_value {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5em;
+}
+
+.period_start_time {
+}
+
+.period_end_time {
 }
 
 .subject {
 
-    margin: 10px 0 10px 0;
+    
     
     color: var(--text-color);
     background-color: var(--background-color-darkest);
@@ -109,6 +132,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    height: 100%;
 
 
     /* not selectable */
@@ -155,8 +179,17 @@ body {
 }
 
 .room_name {
-    font-size: 1em;
+    font-size: 1rem;
     font-style: italic;
+}
+
+.room_lang_name {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.ausfall {
+    font-weight: bold;
 }
 
 input[type="checkbox"]:checked + .subject {

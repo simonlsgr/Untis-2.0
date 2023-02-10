@@ -53,7 +53,8 @@ class WebUntis_request:
 
 
         date_list = [[],[],[],[],[]]
-
+        
+        
         for i,j in enumerate(data["data"]["result"]["data"]["elementPeriods"][self.element_id]):
             untis_date = str(j["date"])
             untis_start_time = str(j["startTime"])
@@ -109,6 +110,6 @@ class WebUntis_request:
     
 
 if __name__ == "__main__":
-    WebUntis_request(1, 475, "2023-02-06", "hh5864").API_call()
-    WebUntis_request(1, 187, "2023-02-06", "hh5846").API_call()
+    WebUntis_request(1, 475, "2023-02-13", "hh5864").API_call()
+    WebUntis_request(1, 187, "2023-02-13", "hh5846").API_call()
       
