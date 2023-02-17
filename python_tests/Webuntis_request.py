@@ -54,16 +54,20 @@ class WebUntis_request:
 
         date_list = [[],[],[],[],[]]
         
-        
-        for i,j in enumerate(data["data"]["result"]["data"]["elementPeriods"][self.element_id]):
-            untis_date = str(j["date"])
-            untis_start_time = str(j["startTime"])
-            if len(untis_start_time) == 3:
-                untis_start_time = "0" + untis_start_time
-            
-            date = datetime.datetime(year=int(untis_date[0:4]), month=int(untis_date[4:6]), day=int(untis_date[6:8]), hour=int(untis_start_time[0:2]), minute=int(untis_start_time[2:4]))
-            j["datetime_start"] = str(date)
-            date_list[date.weekday()].append(j)
+        try:
+            for i,j in enumerate(data["data"]["result"]["data"]["elementPeriods"][self.element_id]):
+                untis_date = str(j["date"])
+                untis_start_time = str(j["startTime"])
+                if len(untis_start_time) == 3:
+                    untis_start_time = "0" + untis_start_time
+                
+                date = datetime.datetime(year=int(untis_date[0:4]), month=int(untis_date[4:6]), day=int(untis_date[6:8]), hour=int(untis_start_time[0:2]), minute=int(untis_start_time[2:4]))
+                j["datetime_start"] = str(date)
+                date_list[date.weekday()].append(j)
+        except:
+            with open("python_tests/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
+                f.write(json.dumps(["0"], indent=4))
+            return None
 
 
         for i, j in enumerate(date_list):
@@ -74,7 +78,7 @@ class WebUntis_request:
             for k, g in itertools.groupby(j, key=lambda x: x["startTime"]):
                 temp_list.append(list(g))
             date_list[i] = temp_list
-            print(i)
+            
 
             
         start_times = []    
@@ -83,7 +87,7 @@ class WebUntis_request:
                 if l[0]["startTime"] not in start_times:
                     start_times.append(l[0]["startTime"])
         start_times.sort()
-        print(json.dumps(start_times, indent=4))
+        
 
         new_date_list = [[],[],[],[],[]]
 
@@ -110,6 +114,6 @@ class WebUntis_request:
     
 
 if __name__ == "__main__":
-    WebUntis_request(1, 475, "2023-02-13", "hh5864").API_call()
-    WebUntis_request(1, 187, "2023-02-13", "hh5846").API_call()
+    WebUntis_request(1, 475, "2023-02-20", "hh5864").API_call()
+    WebUntis_request(1, 187, "2023-02-20", "hh5846").API_call()
       
