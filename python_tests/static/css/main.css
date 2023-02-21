@@ -20,8 +20,40 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--background-color-darkest);
 }
-.container {
-    margin: 0;
+
+.date_switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--background-color-dark);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date_switcher_button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.date_switcher_button:hover {
+    background-color: var(--main-color-hover);
+}
+.main_container {
+    margin: 0 auto;
     /* padding: 0; */
     /* display: grid;
     
@@ -31,9 +63,17 @@ body {
     
 }
 
+.sub_container {
+    width: min-content;
+    margin: 0 auto;
+}
+
 .timetable_wrapper {
     display: grid;
     grid-template-columns: repeat(6, 200px);
+    width: fit-content;
+    /* center */
+    margin: 0 auto;
 }
 
 .day {

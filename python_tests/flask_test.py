@@ -2,9 +2,11 @@ import flask
 import json
 import sys
 import Webuntis_request
+import datetime
 
 app = flask.Flask(__name__)
 
+date_counter = 0
 
 def periods_in_a_week(timetable_formatted):
     list_of_periods = []
@@ -50,6 +52,18 @@ def index():
 
 @app.route("/selecting_subjects", methods=["GET", "POST"])
 def selecting_subjects():
+    start_date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
+    
+    try:
+        Webuntis_request.WebUntis_request(1, 475, start_date, "hh5864").API_call()
+    except:
+        pass
+    try:
+        Webuntis_request.WebUntis_request(1, 187, start_date, "hh5846").API_call()
+    except:
+        pass
+    
+    
     
     with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
@@ -170,6 +184,8 @@ def selecting_subjects():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{flask.url_for('static', filename='css/main.css')}">
         
+        <link rel="shortcut icon" href="{flask.url_for('static', filename='logo.png')}">
+        
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -266,7 +282,9 @@ def save_timetable():
 
 @app.route("/personalized_timetable", methods=["GET", "POST"])
 def selected_subjects():
-    start_date = "2023-02-13"
+    print(int(datetime.date.weekday(datetime.date.today())), file=sys.stderr)
+    start_date = str(datetime.date.today() - datetime.timedelta(days=int(datetime.date.weekday(datetime.date.today())))+ datetime.timedelta(days=date_counter))
+    formatted_date = start_date[8:10] + "." + start_date[5:7] + "." + start_date[0:4]
     try:
         Webuntis_request.WebUntis_request(1, 475, start_date, "hh5864").API_call()
     except:
@@ -285,60 +303,7 @@ def selected_subjects():
     with open("python_tests/src/webuntis_data/subjects_475.json", "r") as f:
         hlg_subjects = json.load(f)
         
-    
-    
-    
-    # list_of_KaiFU_subjects_id = []
-    
-    # for i, j in enumerate(KaiFU_data):
-    #     for k, l in enumerate(j):
-    #         for m, n in enumerate(l):
-    #             if n["id"] not in list_of_KaiFU_subjects_id:
-    #                 list_of_KaiFU_subjects_id.append(n["id"])
-    
-    # list_of_hlg_subjects_id = []
-    
-    # for i, j in enumerate(hlg_data):
-    #     for k, l in enumerate(j):
-    #         for m, n in enumerate(l):
-    #             if n["id"] not in list_of_hlg_subjects_id:
-    #                 list_of_hlg_subjects_id.append(n["id"])
-    
-    
-    # selected_KaiFU_subjects_lesson_id = []
-    # selected_hlg_subjects_lesson_id = []
-    # blocked_KaiFU_ids = []
-    # blocked_hlg_ids = []
-    # if flask.request.method == "POST":
-    #     print(flask.request.form, file=sys.stderr)
-    #     for i, j in enumerate(list_of_KaiFU_subjects_id):
-    #         if flask.request.form.get(str(j)):
-    #             for k, l in enumerate(KaiFU_data):
-    #                 for m, n in enumerate(l):
-    #                     for o, p in enumerate(n):
-    #                         if p["id"] == j:
-    #                             print(p["lessonId"], file=sys.stderr)
-    #                             selected_KaiFU_subjects_lesson_id.append(p["lessonId"])
-    #     for i, j in enumerate(KaiFU_data):
-    #         for k, l in enumerate(j):
-    #             for m, n in enumerate(l):
-    #                 if n["lessonId"] not in selected_KaiFU_subjects_lesson_id:
-    #                     blocked_KaiFU_ids.append(n["lessonId"])
-                        
-        
-    #     for i, j in enumerate(list_of_hlg_subjects_id):
-    #         if flask.request.form.get(str(j)):
-    #             for k, l in enumerate(hlg_data):
-    #                 for m, n in enumerate(l):
-    #                     for o, p in enumerate(n):
-    #                         if p["id"] == j:
-    #                             selected_hlg_subjects_lesson_id.append(p["lessonId"])
-    #     for i, j in enumerate(hlg_data):
-    #         for k, l in enumerate(j):
-    #             for m, n in enumerate(l):
-    #                 if n["lessonId"] not in selected_hlg_subjects_lesson_id:
-    #                     blocked_hlg_ids.append(n["lessonId"])
-    
+
     with open("python_tests/src/webuntis_data/blocked_ids.json", "r") as f:
         blocked_ids_file = json.load(f)
     
@@ -351,17 +316,22 @@ def selected_subjects():
     
     date_switcher_html_element = ""
     
-    date_switcher_html_element += f"""<div class="date_switcher"><form action="/personalized_timetable" method="POST"><input type="submit" value="<"><input type="submit" value=">"></form></div>"""
+    date_switcher_html_element += f"""<div class="date_switcher"><form action="/date_counter_subtract" method="POST"><button class="date_switcher_button" id="date_subtract" type="submit"><i class="fa-solid fa-arrow-right"></i></button></form><label class="current_date">{formatted_date}</label><form action="/date_counter_add" method="POST"><input class="date_switcher_button" type="submit" value=">"></form></div>"""
     
     
     
-    
-    if len(KaiFU_data[0]) >= len(hlg_data[0]):
-        print("KaiFU has more periods", file=sys.stderr)
-        list_of_periods = periods_in_a_week(KaiFU_data)
-    elif len(KaiFU_data[0]) < len(hlg_data[0]):
-        print("hlg has more periods", file=sys.stderr)
-        list_of_periods = periods_in_a_week(hlg_data)
+    try:
+        if len(KaiFU_data[0]) >= len(hlg_data[0]):
+            print("KaiFU has more periods", file=sys.stderr)
+            list_of_periods = periods_in_a_week(KaiFU_data)
+        elif len(KaiFU_data[0]) < len(hlg_data[0]):
+            print("hlg has more periods", file=sys.stderr)
+            list_of_periods = periods_in_a_week(hlg_data)
+    except TypeError:
+        try:
+            list_of_periods = periods_in_a_week(KaiFU_data)
+        except TypeError:
+            list_of_periods = periods_in_a_week(hlg_data)
     
     
     timetable_html_element = ""
@@ -375,10 +345,6 @@ def selected_subjects():
     for index_tag, tag in enumerate(KaiFU_data):
         timetable_html_element += f"""<div class="weekday">{weekdays[index_tag]}</div>"""
         
-        # untis_date = str(j["date"])
-        #     untis_start_time = str(j["startTime"])
-        #     if len(untis_start_time) == 3:
-        #         untis_start_time = "0" + untis_start_time
     try:
         for index_stunde in range(len(list_of_periods)-1):
             stunde_first = str(list_of_periods[index_stunde][0])
@@ -479,39 +445,6 @@ def selected_subjects():
         pass
     timetable_html_element += "</div>"
     
-    
-    # timetable_html_element += f"""<div class="wrapper">"""
-    # for i, j in enumerate(KaiFU_subjects):
-    #     try:
-    #         if j["type"] == 3:
-    #             try:
-    #                 back = j["backColor"]
-    #             except KeyError:
-    #                 back = "#ff0000"
-    #             try:
-    #                 fore = generate_foreColor(back)
-    #             except KeyError:
-    #                 fore = "#F3DFC1"
-    #             timetable_html_element += f"""<div style="background-color: {back}; padding: 30px;"><p style="color: {fore};">{j["longName"]}</p></div>"""
-    #     except KeyError:
-    #         print(j)
-    
-    # for i, j in enumerate(hlg_subjects):
-    #     try:
-    #         if j["type"] == 3:
-    #             try:
-    #                 back = j["backColor"]
-    #             except KeyError:
-    #                 back = "#ff0000"
-    #             try:
-    #                 fore = generate_foreColor(back)
-    #             except KeyError:
-    #                 fore = "#F3DFC1"
-    #             timetable_html_element += f"""<div style="background-color: {back}; padding: 30px;"><p style="color: {fore};">{j["longName"]}</p></div>"""
-    #     except KeyError:
-    #         print(j)
-    # timetable_html_element += f"""</div>""" 
-    
         
             
             
@@ -523,16 +456,36 @@ def selected_subjects():
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{flask.url_for('static', filename='css/main.css')}">
-        <title>Document</title>
+        <link rel="shortcut icon" href="{flask.url_for('static', filename='logo.png')}">
+        <title>WebUntis 2.0</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/fc9ee00639.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        {date_switcher_html_element}
-        <div class="container">{timetable_html_element}</div>
+        <div class="main_container">
+        <div class="sub_container">{date_switcher_html_element}{timetable_html_element}</div>
+        </div>
     </body>
     </html>"""
     return html
     
+    
+@app.route("/date_counter_subtract", methods=["GET", "POST"])
+def date_counter_subtract():
+    global date_counter
+    date_counter -= 7
+    
+    return flask.redirect("/personalized_timetable")
 
+@app.route("/date_counter_add", methods=["GET", "POST"])
+def date_counter_add ():
+    global date_counter
+    date_counter += 7
+    return flask.redirect("/personalized_timetable")
 
 if __name__ == "__main__":
     app.run(debug=True)
