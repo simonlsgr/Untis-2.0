@@ -35,6 +35,39 @@ def generate_foreColor(hex_color: str):
     else:
         return "#ffffff"
     
+    
+def timetable_periods_selector_generator(data, index_tag, index_stunde, subjects):
+    timetable_html_element = ""
+    try:
+        for index_fach, fach in enumerate(data[index_tag][index_stunde]):
+            for index_element, element in enumerate(fach["elements"]):
+                for index_fach_informationen, fach_informationen in enumerate(subjects):
+                    if fach_informationen["id"] == element["id"]:
+                        
+                        if element["type"] == 3:
+                            fach_name = fach_informationen["name"]
+                            fach_lang_name = ""#fach_informationen["longName"]
+                            
+                            fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
+                            
+                        elif element["type"] == 4:
+                            raum_name = fach_informationen["name"]
+                            raum_lang_name = fach_informationen["longName"]
+                            if raum_name == raum_lang_name:
+                                raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
+                            elif raum_name != raum_lang_name:
+                                raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
+            id_for_checkbox = fach["id"]
+            try:
+                timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
+            except UnboundLocalError:
+                pass
+    except IndexError:
+        pass
+    
+    
+    return str(timetable_html_element)
+    
 
 
 
@@ -118,56 +151,9 @@ def selecting_subjects():
         
         timetable_html_element += f"""<div class="period"><div class="period_time"><div class="period_start_time">{stunde_first}</div><div class="period_end_time">{stunde_second}</div> </div></div>"""
         for index_tag in range(5):
-            timetable_html_element += f"""<div class="period"><div class="period_time"></div>"""
-            try:
-                for index_fach, fach in enumerate(KaiFU_data[index_tag][index_stunde]):
-                    for index_element, element in enumerate(fach["elements"]):
-                        for index_fach_informationen, fach_informationen in enumerate(KaiFU_subjects):
-                            if fach_informationen["id"] == element["id"]:
-                                
-                                if element["type"] == 3:
-                                    fach_name = fach_informationen["name"]
-                                    fach_lang_name = ""#fach_informationen["longName"]
-                                    
-                                    fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
-                                    
-                                elif element["type"] == 4:
-                                    raum_name = fach_informationen["name"]
-                                    raum_lang_name = fach_informationen["longName"]
-                                    if raum_name == raum_lang_name:
-                                        raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
-                                    elif raum_name != raum_lang_name:
-                                        raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
-                    id_for_checkbox = fach["id"]
-                    try:
-                        timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
-                    except UnboundLocalError:
-                        pass
-            except IndexError:
-                pass
-            try:
-                for index_fach, fach in enumerate(hlg_data[index_tag][index_stunde]):
-                    for index_element, element in enumerate(fach["elements"]):
-                        for index_fach_informationen, fach_informationen in enumerate(hlg_subjects):
-                            if fach_informationen["id"] == element["id"]:
-                                
-                                if element["type"] == 3:
-                                    fach_name = fach_informationen["name"]
-                                    fach_lang_name = ""#fach_informationen["longName"]
-                                    
-                                    fach_html_element = f"""<div class="subject_name"><div class="subject_short_name">{fach_name}</div><div class="subject_long_name">{fach_lang_name}</div></div>"""
-                                    
-                                elif element["type"] == 4:
-                                    raum_name = fach_informationen["name"]
-                                    raum_lang_name = fach_informationen["longName"]
-                                    if raum_name == raum_lang_name:
-                                        raum_html_element = f"""<div class="room_name">{raum_name}</div>"""
-                                    elif raum_name != raum_lang_name:
-                                        raum_html_element = f"""<div class="room_name">{raum_name} ({raum_lang_name})</div>"""
-                    id_for_checkbox = fach["id"]
-                    timetable_html_element += f"""<input type="checkbox" name="{id_for_checkbox}" value="{id_for_checkbox}" id="checkbox_number_{id_for_checkbox}"><label for="checkbox_number_{id_for_checkbox}" class="subject"><div class="info">{fach_html_element}{raum_html_element}</div></label>"""            
-            except IndexError:
-                pass
+            timetable_html_element += """<div class="period"><div class="period_time"></div>"""
+            timetable_html_element += str(timetable_periods_selector_generator(data=KaiFU_data, subjects=KaiFU_subjects, index_tag=index_tag, index_stunde=index_stunde))
+            timetable_html_element += str(timetable_periods_selector_generator(data=hlg_data, subjects=hlg_subjects, index_tag=index_tag, index_stunde=index_stunde))
             timetable_html_element += "</div>"
         
     timetable_html_element += "</div>"
@@ -361,6 +347,7 @@ def selected_subjects():
             timetable_html_element += f"""<div class="period"><div class="period_time_value"><div class="period_start_time">{stunde_first}</div><div class="period_end_time">{stunde_second}</div></div></div>"""
             for index_tag in range(5):
                 timetable_html_element += f"""<div class="period"><div class="period_time"></div>"""
+                
                 try:
                     for index_fach, fach in enumerate(KaiFU_data[index_tag][index_stunde]):
                         if fach["lessonId"] not in blocked_KaiFU_ids:
