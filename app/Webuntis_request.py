@@ -45,10 +45,10 @@ class WebUntis_request:
 
         response = requests.request("GET", url, data=payload, headers=headers, params=querystring)
 
-        with open("python_tests/src/webuntis_data/data_unformatted_"+self.element_id+".json", "w") as f:
+        with open("app/src/webuntis_data/data_unformatted_"+self.element_id+".json", "w") as f:
             f.write(response.text)
         
-        with open("python_tests/src/webuntis_data/data_unformatted_"+self.element_id+".json", "r") as f:
+        with open("app/src/webuntis_data/data_unformatted_"+self.element_id+".json", "r") as f:
             data = json.load(f)
 
 
@@ -65,7 +65,7 @@ class WebUntis_request:
                 j["datetime_start"] = str(date)
                 date_list[date.weekday()].append(j)
         except:
-            with open("python_tests/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
+            with open("app/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
                 f.write(json.dumps(["0"], indent=4))
             return None
 
@@ -103,12 +103,12 @@ class WebUntis_request:
         date_list = new_date_list
             
 
-        with open("python_tests/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
+        with open("app/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
             f.write(json.dumps(date_list, indent=4))
         
         subjects = response.text
         subjects = json.loads(subjects)["data"]["result"]["data"]["elements"]
-        with open("python_tests/src/webuntis_data/subjects_"+self.element_id+".json", "w") as f:
+        with open("app/src/webuntis_data/subjects_"+self.element_id+".json", "w") as f:
             f.write(json.dumps(subjects))
         return None
     

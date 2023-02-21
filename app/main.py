@@ -65,15 +65,15 @@ def selecting_subjects():
     
     
     
-    with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_187.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_187.json", "r") as f:
         KaiFU_subjects = json.load(f)
         
         
-    with open("python_tests/src/webuntis_data/data_formatted_475.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_475.json", "r") as f:
         hlg_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_475.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_475.json", "r") as f:
         hlg_subjects = json.load(f)
 
     
@@ -202,14 +202,14 @@ def selecting_subjects():
 
 @app.route("/save_timetable", methods=["GET", "POST"])
 def save_timetable():
-    with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_187.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_187.json", "r") as f:
         KaiFU_subjects = json.load(f)
         
-    with open("python_tests/src/webuntis_data/data_formatted_475.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_475.json", "r") as f:
         hlg_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_475.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_475.json", "r") as f:
         hlg_subjects = json.load(f)
     
         
@@ -266,7 +266,7 @@ def save_timetable():
                     if n["lessonId"] not in selected_hlg_subjects_lesson_id:
                         blocked_hlg_ids.append(n["lessonId"])
     try:
-        with open("python_tests/src/webuntis_data/blocked_ids.json", "w") as f:
+        with open("app/src/webuntis_data/blocked_ids.json", "w") as f:
         
             blocked_ids = {
                 "blocked_KaiFU_ids": blocked_KaiFU_ids,
@@ -293,18 +293,18 @@ def selected_subjects():
         Webuntis_request.WebUntis_request(1, 187, start_date, "hh5846").API_call()
     except:
         pass
-    with open("python_tests/src/webuntis_data/data_formatted_187.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_187.json", "r") as f:
         KaiFU_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_187.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_187.json", "r") as f:
         KaiFU_subjects = json.load(f)
         
-    with open("python_tests/src/webuntis_data/data_formatted_475.json", "r") as f:
+    with open("app/src/webuntis_data/data_formatted_475.json", "r") as f:
         hlg_data = json.load(f)
-    with open("python_tests/src/webuntis_data/subjects_475.json", "r") as f:
+    with open("app/src/webuntis_data/subjects_475.json", "r") as f:
         hlg_subjects = json.load(f)
         
 
-    with open("python_tests/src/webuntis_data/blocked_ids.json", "r") as f:
+    with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
         blocked_ids_file = json.load(f)
     
     blocked_KaiFU_ids = blocked_ids_file["blocked_KaiFU_ids"]
@@ -316,7 +316,7 @@ def selected_subjects():
     
     date_switcher_html_element = ""
     
-    date_switcher_html_element += f"""<div class="date_switcher"><form action="/date_counter_subtract" method="POST"><button class="date_switcher_button" id="date_subtract" type="submit"><i class="fa-solid fa-arrow-right"></i></button></form><label class="current_date">{formatted_date}</label><form action="/date_counter_add" method="POST"><input class="date_switcher_button" type="submit" value=">"></form></div>"""
+    date_switcher_html_element += f"""<div class="date_switcher"><form class="date_switcher_button_parent" action="/date_counter_subtract" method="POST"><button class="date_switcher_button" id="date_subtract" type="submit"><i class="fa fa-arrow-left"></i></button></form><label class="current_date">{formatted_date}</label><form class="date_switcher_button_parent" action="/date_counter_add" method="POST"><button class="date_switcher_button" id="date_add" type="submit"><i class="fa fa-arrow-right"></i></button></form></div>"""
     
     
     
@@ -331,7 +331,10 @@ def selected_subjects():
         try:
             list_of_periods = periods_in_a_week(KaiFU_data)
         except TypeError:
-            list_of_periods = periods_in_a_week(hlg_data)
+            try:
+                list_of_periods = periods_in_a_week(hlg_data)
+            except TypeError:
+                list_of_periods = []
     
     
     timetable_html_element = ""
