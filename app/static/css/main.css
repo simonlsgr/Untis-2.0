@@ -13,12 +13,109 @@
     
 }
 
+html {
+    
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--background-color-darkest);
+    height: 100%;
+}
+
+.navbar {
+    background: #202225;
+    float: left;
+    height: 100vh;
+    width: 72px;
+    
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+    padding-top: 0;
+}
+
+.links-navbar:first-child {
+    margin-top: 12px;
+}
+.links-navbar {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; 
+    background: #36393f;
+    
+    position: relative;
+    
+    transition: border-radius 250ms, background 250ms;
+    
+}
+
+
+
+.links-navbar:hover::before {
+    content: "";
+    display: block;
+    height: 40%;
+    width: 10%;
+    background-color: var(--text-color-darker);
+    border-radius: 0 6px 6px 0;
+    transform: translateX(-11px);
+    top: 30%;
+    position: relative;
+    animation: grow-pill 0.12s 0s backwards ease-in-out;
+}
+
+
+@keyframes grow-pill {
+    0% {
+        width: 0%;
+        height: 0%;
+        top: 50%;
+    }
+    100% {
+        width: 10%;
+        height: 40%;
+        top: 30%;
+    }
+}
+
+.links-navbar.active::before {
+    content: "";
+    display: block;
+    height: 65%;
+    width: 10%;
+    background-color: var(--text-color);
+    border-radius: 0 6px 6px 0;
+    transform: translateX(-11px);
+    top: 17.5%;
+    position: relative;
+}
+
+.links-navbar > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.links-navbar:hover {
+    border-radius: 25%;
+    background: var(--main-color-hover);
+}
+.links-navbar.active {
+  border-radius: 25%;
+  background: var(--main-color);
 }
 
 .date_switcher {
@@ -71,10 +168,6 @@ body {
 
 .main_container {
     margin: 0 auto;
-    /* padding: 0; */
-    /* display: grid;
-    
-    grid-template-columns: repeat(5, 1fr); */
     display: flex;
     flex-direction: column;
     
@@ -84,13 +177,26 @@ body {
     width: min-content;
     margin: 0 auto;
 }
+.weekdays_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.timetable_wrapper_form {
+    margin: 0 auto;
+    width: fit-content;
+}
 
 .timetable_wrapper {
     display: grid;
     grid-template-columns: repeat(6, 200px);
     width: fit-content;
-    /* center */
     margin: 0 auto;
+    height: calc(100vh - 180px);
+    overflow: auto;
+    clear: both;
 }
 
 .day {
@@ -116,9 +222,7 @@ body {
     justify-content: flex-start;
 }
 
-.weekday:nth-child(1){
-    background-color: var(--background-color-darkest);
-}
+
 
 .container > .weekday > h1 {
     padding: 10px;
@@ -256,6 +360,21 @@ input[type="checkbox"]:checked + .subject {
 input[type="checkbox"] {
     position: absolute;
     z-index: -100;
+    opacity: 0;
+    top: 0;
+}
+
+.submit_timetable {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 100%;
 }
 
 

@@ -66,7 +66,7 @@ class WebUntis_request:
                 date_list[date.weekday()].append(j)
         except:
             with open("app/src/webuntis_data/data_formatted_"+self.element_id+".json", "w") as f:
-                f.write(json.dumps(["0"], indent=4))
+                f.write(json.dumps([[],[],[],[],[]], indent=4))
             return None
 
 

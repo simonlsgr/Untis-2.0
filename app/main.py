@@ -130,14 +130,18 @@ def selecting_subjects():
     
     
     timetable_html_element += f"""<form action="/save_timetable" class="timetable_wrapper_form" method="POST">"""
-    timetable_html_element += f"""<div class="timetable_wrapper">"""
     
+    
+    timetable_html_element += f"""<div class="weekdays_wrapper">"""
 
     weekdays = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]
-    timetable_html_element += f"""<div class="weekday"></div>"""
+    timetable_html_element += f"""<div class="weekday">12</div>"""
     for index_tag, tag in enumerate(KaiFU_data):
         timetable_html_element += f"""<div class="weekday">{weekdays[index_tag]}</div>"""
         
+    timetable_html_element += f"""</div>"""
+        
+    timetable_html_element += f"""<div class="timetable_wrapper">"""
         
     for index_stunde in range(len(list_of_periods)-1):
         stunde_first = str(list_of_periods[index_stunde][0])
@@ -157,7 +161,7 @@ def selecting_subjects():
             timetable_html_element += "</div>"
         
     timetable_html_element += "</div>"
-    timetable_html_element += """<input type="submit" value="Submit">"""
+    timetable_html_element += """<input class="submit_timetable"type="submit" value="Submit">"""
     timetable_html_element += "</form>"
             
             
@@ -252,22 +256,25 @@ def save_timetable():
                     if n["lessonId"] not in selected_hlg_subjects_lesson_id:
                         blocked_hlg_ids.append(n["lessonId"])
     try:
+        with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
+            blocked_ids = json.load(f)
         with open("app/src/webuntis_data/blocked_ids.json", "w") as f:
-        
-            blocked_ids = {
+            index = len(blocked_ids)
+            blocked_ids.append({
                 "blocked_KaiFU_ids": blocked_KaiFU_ids,
                 "blocked_hlg_ids": blocked_hlg_ids
-            }
+            })
+            
             f.write(json.dumps(blocked_ids))
     except:
-        pass
+        index = 0
     
-    return flask.redirect("/personalized_timetable")
+    return flask.redirect("/personalized_timetable/"+str(index))
     
 
 
-@app.route("/personalized_timetable", methods=["GET", "POST"])
-def selected_subjects():
+@app.route("/personalized_timetable/<profile_number>", methods=["GET", "POST"])
+def selected_subjects(profile_number):
     print(int(datetime.date.weekday(datetime.date.today())), file=sys.stderr)
     start_date = str(datetime.date.today() - datetime.timedelta(days=int(datetime.date.weekday(datetime.date.today())))+ datetime.timedelta(days=date_counter))
     formatted_date = start_date[8:10] + "." + start_date[5:7] + "." + start_date[0:4]
@@ -293,9 +300,16 @@ def selected_subjects():
     with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
         blocked_ids_file = json.load(f)
     
-    blocked_KaiFU_ids = blocked_ids_file["blocked_KaiFU_ids"]
-    blocked_hlg_ids = blocked_ids_file["blocked_hlg_ids"]
+    blocked_KaiFU_ids = blocked_ids_file[int(profile_number)]["blocked_KaiFU_ids"]
+    blocked_hlg_ids = blocked_ids_file[int(profile_number)]["blocked_hlg_ids"]
     
+    navbar_html_element = ""
+    for i in range(len(blocked_ids_file)):
+        if i == int(profile_number):
+            navbar_html_element += f"""<a class="links-navbar active" href="/personalized_timetable/{i}" title="Profile {i}"><p>{i}</p></a>"""
+        else:
+            navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{i}"title="Profile {i}"><p>{i}</p></a>"""
+    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
         
             
     
@@ -326,14 +340,21 @@ def selected_subjects():
     timetable_html_element = ""
     
     
-    timetable_html_element += f"""<div class="timetable_wrapper">"""
     
-
+    
+    
+    
+    timetable_html_element += f"""<div class="weekdays_wrapper">"""
+    
     weekdays = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag"]
-    timetable_html_element += f"""<div class="weekday"></div>"""
+    
+    timetable_html_element += f"""<div class="weekday">{"12"}</div>"""
     for index_tag, tag in enumerate(KaiFU_data):
         timetable_html_element += f"""<div class="weekday">{weekdays[index_tag]}</div>"""
         
+    timetable_html_element += f"""</div>"""    
+    timetable_html_element += f"""<div class="timetable_wrapper">"""
+    
     try:
         for index_stunde in range(len(list_of_periods)-1):
             stunde_first = str(list_of_periods[index_stunde][0])
@@ -456,6 +477,7 @@ def selected_subjects():
         <script src="https://kit.fontawesome.com/fc9ee00639.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <nav class="navbar">{navbar_html_element}</nav>
         <div class="main_container">
         <div class="sub_container">{date_switcher_html_element}{timetable_html_element}</div>
         </div>
