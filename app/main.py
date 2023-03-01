@@ -73,14 +73,48 @@ def timetable_periods_selector_generator(data, index_tag, index_stunde, subjects
 
 @app.route("/")
 def index():
-    # with open("src/timetable.json", "r") as f:
-    #     timetable_input = json.load(f)
+    try:
+        with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
+            blocked_ids_file = json.load(f)
+    except:
+        blocked_ids_file = []
+
+    navbar_html_element = """<a class="homepage-navbar-link active" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
+    for i in range(len(blocked_ids_file)):
+        navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
     
-    # if timetable_input:
-    #     return str(timetable_input)
-    # else:
-    #     return str(timetable_input)
-    return flask.redirect("/selecting_subjects")
+    homepage_html_element = """<div class="homepage_container"><div class="homepage_title">WebUntis 2.0</div><div class="homepage_subtitle">Select your subjects</div></div>"""
+    
+    html = f"""    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{flask.url_for('static', filename='css/main.css')}">
+        
+        <link rel="shortcut icon" href="{flask.url_for('static', filename='logo.png')}">
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+        
+        
+        <title>WebUntis 2.0</title>
+    </head>
+    <body>
+        <nav class="navbar">{navbar_html_element}</nav>
+        <div class="main_container">
+        <div class="sub_container">{homepage_html_element}</div>
+        </div>
+    </body>
+    </html>"""
+    
+    
+    return html
     
 
 @app.route("/selecting_subjects", methods=["GET", "POST"])
@@ -108,8 +142,17 @@ def selecting_subjects():
         hlg_data = json.load(f)
     with open("app/src/webuntis_data/subjects_475.json", "r") as f:
         hlg_subjects = json.load(f)
+        
+    try:
+        with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
+            blocked_ids_file = json.load(f)
+    except:
+        blocked_ids_file = []
 
-    
+    navbar_html_element = """<a class="homepage-navbar-link" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
+    for i in range(len(blocked_ids_file)):
+        navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
     
 
     try:
@@ -130,6 +173,8 @@ def selecting_subjects():
     
     
     timetable_html_element += f"""<form action="/save_timetable" class="timetable_wrapper_form" method="POST">"""
+    
+    timetable_html_element += f"""<input id="input-profile-name-id" name="input-profile-name-name" class="input-profile-name" type="text" placeholder="Profilname eingeben…" />"""
     
     
     timetable_html_element += f"""<div class="weekdays_wrapper">"""
@@ -185,7 +230,10 @@ def selecting_subjects():
         <title>WebUntis 2.0</title>
     </head>
     <body>
-        <div class="container">{timetable_html_element}</div>
+        <nav class="navbar">{navbar_html_element}</nav>
+        <div class="main_container">
+        <div class="sub_container">{timetable_html_element}</div>
+        </div>
     </body>
     </html>"""
     return html
@@ -228,13 +276,13 @@ def save_timetable():
     blocked_KaiFU_ids = []
     blocked_hlg_ids = []
     if flask.request.method == "POST":
+            
         for i, j in enumerate(list_of_KaiFU_subjects_id):
             if flask.request.form.get(str(j)):
                 for k, l in enumerate(KaiFU_data):
                     for m, n in enumerate(l):
                         for o, p in enumerate(n):
                             if p["id"] == j:
-                                print(p["lessonId"], file=sys.stderr)
                                 selected_KaiFU_subjects_lesson_id.append(p["lessonId"])
         for i, j in enumerate(KaiFU_data):
             for k, l in enumerate(j):
@@ -255,27 +303,31 @@ def save_timetable():
                 for m, n in enumerate(l):
                     if n["lessonId"] not in selected_hlg_subjects_lesson_id:
                         blocked_hlg_ids.append(n["lessonId"])
+        profile_name = flask.request.form.getlist("input-profile-name-name")[0]
+        
     try:
         with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
             blocked_ids = json.load(f)
         with open("app/src/webuntis_data/blocked_ids.json", "w") as f:
             index = len(blocked_ids)
+            if profile_name == "":
+                profile_name = "Mein Stundenplan " + str(index + 1)
             blocked_ids.append({
                 "blocked_KaiFU_ids": blocked_KaiFU_ids,
-                "blocked_hlg_ids": blocked_hlg_ids
+                "blocked_hlg_ids": blocked_hlg_ids,
+                "name": profile_name
             })
             
             f.write(json.dumps(blocked_ids))
     except:
         index = 0
     
-    return flask.redirect("/personalized_timetable/"+str(index))
+    return flask.redirect("/personalized_timetable/"+str(profile_name))
     
 
 
-@app.route("/personalized_timetable/<profile_number>", methods=["GET", "POST"])
-def selected_subjects(profile_number):
-    print(int(datetime.date.weekday(datetime.date.today())), file=sys.stderr)
+@app.route("/personalized_timetable/<profile_name>", methods=["GET", "POST"])
+def selected_subjects(profile_name):
     start_date = str(datetime.date.today() - datetime.timedelta(days=int(datetime.date.weekday(datetime.date.today())))+ datetime.timedelta(days=date_counter))
     formatted_date = start_date[8:10] + "." + start_date[5:7] + "." + start_date[0:4]
     try:
@@ -299,16 +351,22 @@ def selected_subjects(profile_number):
 
     with open("app/src/webuntis_data/blocked_ids.json", "r") as f:
         blocked_ids_file = json.load(f)
+        
+    for i, j in enumerate(blocked_ids_file):
+        if j["name"] == profile_name:
+            profile_number = i
+            break
+    
     
     blocked_KaiFU_ids = blocked_ids_file[int(profile_number)]["blocked_KaiFU_ids"]
     blocked_hlg_ids = blocked_ids_file[int(profile_number)]["blocked_hlg_ids"]
     
-    navbar_html_element = ""
+    navbar_html_element = """<a class="homepage-navbar-link" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
     for i in range(len(blocked_ids_file)):
         if i == int(profile_number):
-            navbar_html_element += f"""<a class="links-navbar active" href="/personalized_timetable/{i}" title="Profile {i}"><p>{i}</p></a>"""
+            navbar_html_element += f"""<a class="links-navbar active" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
         else:
-            navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{i}"title="Profile {i}"><p>{i}</p></a>"""
+            navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}"title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
     navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
         
             
@@ -316,16 +374,14 @@ def selected_subjects(profile_number):
     
     date_switcher_html_element = ""
     
-    date_switcher_html_element += f"""<div class="date_switcher"><form class="date_switcher_button_parent" action="/date_counter_subtract" method="POST"><button class="date_switcher_button" id="date_subtract" type="submit"><i class="fa fa-arrow-left"></i></button></form><label class="current_date">{formatted_date}</label><form class="date_switcher_button_parent" action="/date_counter_add" method="POST"><button class="date_switcher_button" id="date_add" type="submit"><i class="fa fa-arrow-right"></i></button></form></div>"""
+    date_switcher_html_element += f"""<div class="date_switcher"><form class="date_switcher_button_parent" action="/date_counter_subtract/{profile_number}" method="POST"><button class="date_switcher_button" id="date_subtract" type="submit"><i class="fa fa-arrow-left"></i></button></form><label class="current_date">{formatted_date}</label><form class="date_switcher_button_parent" action="/date_counter_add/{profile_number}" method="POST"><button class="date_switcher_button" id="date_add" type="submit"><i class="fa fa-arrow-right"></i></button></form></div>"""
     
     
     
     try:
         if len(KaiFU_data[0]) >= len(hlg_data[0]):
-            print("KaiFU has more periods", file=sys.stderr)
             list_of_periods = periods_in_a_week(KaiFU_data)
         elif len(KaiFU_data[0]) < len(hlg_data[0]):
-            print("hlg has more periods", file=sys.stderr)
             list_of_periods = periods_in_a_week(hlg_data)
     except TypeError:
         try:
@@ -486,18 +542,25 @@ def selected_subjects(profile_number):
     return html
     
     
-@app.route("/date_counter_subtract", methods=["GET", "POST"])
-def date_counter_subtract():
+@app.route("/date_counter_subtract/<number>", methods=["GET", "POST"])
+def date_counter_subtract(number):
     global date_counter
     date_counter -= 7
+    with open("app/src/webuntis_data/blocked_ids.json", "r") as file:
+        blocked_ids = json.load(file)
+    name = blocked_ids[int(number)]["name"]
     
-    return flask.redirect("/personalized_timetable")
+    return flask.redirect("/personalized_timetable/"+name)
 
-@app.route("/date_counter_add", methods=["GET", "POST"])
-def date_counter_add ():
+@app.route("/date_counter_add/<number>", methods=["GET", "POST"])
+def date_counter_add (number):
     global date_counter
     date_counter += 7
-    return flask.redirect("/personalized_timetable")
+    with open("app/src/webuntis_data/blocked_ids.json", "r") as file:
+        blocked_ids = json.load(file)
+    name = blocked_ids[int(number)]["name"]
+    
+    return flask.redirect("/personalized_timetable/"+name)
 
 if __name__ == "__main__":
     app.run(debug=True)

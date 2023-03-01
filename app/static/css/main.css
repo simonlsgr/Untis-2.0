@@ -39,14 +39,12 @@ body {
     padding-top: 0;
 }
 
-.links-navbar:first-child {
-    margin-top: 12px;
-}
+
 .links-navbar {
     display: block;
     width: 48px;
     height: 48px;
-    border-radius: 50%; 
+    border-radius: 50%;
     background: #36393f;
     
     position: relative;
@@ -54,6 +52,7 @@ body {
     transition: border-radius 250ms, background 250ms;
     
 }
+
 
 
 
@@ -113,10 +112,62 @@ body {
     border-radius: 25%;
     background: var(--main-color-hover);
 }
+
 .links-navbar.active {
   border-radius: 25%;
   background: var(--main-color);
 }
+
+.homepage-navbar-link {
+    margin-top: 12px;
+    height: 48px;
+    width: 48px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.homepage-navbar-link.active::before {    
+    content: "";
+    display: block;
+    height: 65%;
+    width: 10%;
+    background-color: var(--text-color);
+    border-radius: 0 6px 6px 0;
+    transform: translateX(-11px);
+    top: 17.5%;
+    position: relative;
+}
+
+.homepage-navbar-link.active > .homepage-navbar-image {
+    transform: translateY(-65%);
+    filter: grayscale(0%) !important;
+}
+
+.homepage-navbar-image {
+    height: 48px;
+    width: 48px;
+    filter: grayscale(60%);
+}
+
+.homepage-navbar-link.active > .homepage-navbar-image:hover {
+    animation: none;
+}
+
+.homepage-navbar-image:hover {
+    animation: grow-pic 0.2s forwards ease-out;
+}
+
+@keyframes grow-pic {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        scale: 1.3;
+    }
+}
+
 
 .date_switcher {
     display: flex;
@@ -194,9 +245,28 @@ body {
     grid-template-columns: repeat(6, 200px);
     width: fit-content;
     margin: 0 auto;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 205px);
     overflow: auto;
     clear: both;
+}
+
+.input-profile-name {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--background-color-darker);
+    outline: 2px solid var(--background-color-dark);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.input-profile-name:focus {
+    outline: 2px solid var(--main-color);
 }
 
 .day {
