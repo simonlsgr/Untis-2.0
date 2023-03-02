@@ -169,6 +169,72 @@ body {
 }
 
 
+.main_container_homepage {
+    margin: 0 auto;
+    display: grid;
+    width: 70%;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.sub_container_homepage {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.homepage_container {
+    background-color: var(--background-color-darker);
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage_h1 {
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+    
+    justify-content: center;
+    width: fit-content;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.homepage_h2 {
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    margin: 0;
+}
+
+.homepage_p {
+    color: var(--text-color);
+    background-color: var(--background-color-dark);
+
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.homepage_p:last-child {
+    margin-bottom: 0;
+}
+
+
 .date_switcher {
     display: flex;
     flex-direction: row;

@@ -84,7 +84,14 @@ def index():
         navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
     navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
     
-    homepage_html_element = """<div class="homepage_container"><div class="homepage_title">WebUntis 2.0</div><div class="homepage_subtitle">Select your subjects</div></div>"""
+    homepage_html_element = """<div class="homepage_container">
+    <h1 class="homepage_h1">WebUntis 2.0</h1>
+    <h2 class="homepage_h2">Was ist WebUntis 2.0?</h2>
+    <p class="homepage_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquid natus a! Mollitia, esse est, totam temporibus minima ab ad exercitationem inventore distinctio expedita obcaecati fugiat nam debitis natus assumenda laudantium, eius culpa numquam. Perferendis voluptatibus autem dolor sequi error.</p>
+    <h2 class="homepage_h2">Wie funktioniert WebUntis 2.0?</h2>
+    <p class="homepage_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquid natus a! Mollitia, esse est, totam temporibus minima ab ad exercitationem inventore distinctio expedita obcaecati fugiat nam debitis natus assumenda laudantium, eius culpa numquam. Perferendis voluptatibus autem dolor sequi error.</p>
+    
+    </div>"""
     
     html = f"""    
     <!DOCTYPE html>
@@ -107,8 +114,9 @@ def index():
     </head>
     <body>
         <nav class="navbar">{navbar_html_element}</nav>
-        <div class="main_container">
-        <div class="sub_container">{homepage_html_element}</div>
+        <div class="main_container_homepage"><div class="sub_container_homepage">
+        {homepage_html_element}
+        </div>
         </div>
     </body>
     </html>"""
@@ -412,7 +420,7 @@ def selected_subjects(profile_name):
     timetable_html_element += f"""<div class="timetable_wrapper">"""
     
     try:
-        for index_stunde in range(len(list_of_periods)-1):
+        for index_stunde in range(len(list_of_periods)):
             stunde_first = str(list_of_periods[index_stunde][0])
             stunde_second = str(list_of_periods[index_stunde][1])
             if len(stunde_first) == 3:
