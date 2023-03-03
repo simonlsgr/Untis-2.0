@@ -9,6 +9,7 @@
     
     --text-color: #F3DFC1;
     --text-color-darker: #DDBEA8;
+    --text-color-link: #00fff2;
 
     
 }
@@ -21,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color-darkest);
     height: 100%;
 }
@@ -69,6 +70,9 @@ body {
     animation: grow-pill 0.12s 0s backwards ease-in-out;
 }
 
+.links-navbar.active:hover::before {
+    animation: none;
+}
 
 @keyframes grow-pill {
     0% {
@@ -103,7 +107,23 @@ body {
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: bold;
+    /* add ubuntu mono */
+    font-family: 'Ubuntu', monospace;
     text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.plus-sign {
+    position: absolute;
+    /* add a filter to make the image whgite */
+    filter: invert(100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 20px;
+    width: 20px;
     padding: 0;
     margin: 0;
 }
@@ -111,6 +131,31 @@ body {
 .links-navbar:hover {
     border-radius: 25%;
     background: var(--main-color-hover);
+}
+
+.links-navbar:hover > p > .plus-sign{
+    animation: grow-plus 0.2s forwards ease-in-out;
+}
+
+.links-navbar.active:hover > p > .plus-sign{
+    animation: none;
+}
+
+@keyframes grow-plus {
+    0% {
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .links-navbar.active {
@@ -232,6 +277,16 @@ body {
 
 .homepage_p:last-child {
     margin-bottom: 0;
+}
+
+.github-link {
+    color: var(--text-color-link);
+}
+
+.kleingedrucktes {
+    color: var(--text-color);
+    font-size: 0.3rem;
+    margin-top: 10px;
 }
 
 

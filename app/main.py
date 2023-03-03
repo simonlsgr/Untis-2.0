@@ -81,15 +81,15 @@ def index():
 
     navbar_html_element = """<a class="homepage-navbar-link active" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
     for i in range(len(blocked_ids_file)):
-        navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
-    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
+        navbar_html_element += f"""<a class="links-navbar" href="/personalisierter_Stundenplan/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+    navbar_html_element += """<a class="links-navbar" href="/Faecherauswahl"><p><img class="plus-sign" src="/static/plus-sign.png"></p></a>"""
     
     homepage_html_element = """<div class="homepage_container">
-    <h1 class="homepage_h1">WebUntis 2.0</h1>
+    <h1 class="homepage_h1">Willkommen bei WebUntis 2.0</h1>
     <h2 class="homepage_h2">Was ist WebUntis 2.0?</h2>
-    <p class="homepage_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquid natus a! Mollitia, esse est, totam temporibus minima ab ad exercitationem inventore distinctio expedita obcaecati fugiat nam debitis natus assumenda laudantium, eius culpa numquam. Perferendis voluptatibus autem dolor sequi error.</p>
+    <p class="homepage_p">WebUntis 2.0 ist eine aufpolierte Webanwendung für das Stundenplan-Programm Untis. Das Programm ist auf Schüler und Schülerinnen des KaiFUs und HLGs aus der Oberstufe* und deren Eltern ausgerichtet. Die Hauptvorteile gegenüber UntisBeta liegen darin, dass die Fächer mit HLG und KaiFU Lehrern und Lehrerinnen auf einem Plan sind. Zudem ist es möglich nur die Fächer, die einen interessieren, auszuwählen und es überzeugt mit einem extrem anwenderfreundlichen Design. Entwickelt und vermarktet wurde das Programm von den Entrepreneurs Simon Latschinger und Paul Stramm, mehr von uns unter <a class="github-link" href="https://github.com/simonlsr/Untis-2.0">GitHub</a>.<br><a class="kleingedrucktes">*nicht für Schüler der Klassenstufe 11</a></p>
     <h2 class="homepage_h2">Wie funktioniert WebUntis 2.0?</h2>
-    <p class="homepage_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquid natus a! Mollitia, esse est, totam temporibus minima ab ad exercitationem inventore distinctio expedita obcaecati fugiat nam debitis natus assumenda laudantium, eius culpa numquam. Perferendis voluptatibus autem dolor sequi error.</p>
+    <p class="homepage_p">Um sich ein Stundenplan-Profil anzulegen, muss man oben links auf das Plus drücken. Dann kann man oben den gewünschten Namen für den Stundenplan eingeben und danach alle Kurse, die man angezeigt haben möchte, auswählen. Dabei reicht es, wenn man jeden Kurs nur ein mal anklickt. Sobald man alle Kurse ausgewählt hat, klickt man auf erstellen. Wenn man auf der linken Seite wieder auf das Plus drückt, kann man auf die gleiche Art ein neues Profil erstellen. Mit einem Klick auf das Untis 2.0 Logo kommen sie wieder auf die Startseite. Wenn man die erstellten Profile auf der linken Seite aufruft, sieht man den jeweiligen Stundenplan und in welchen Fächern Entfall etc. ist. Über die Pfeile über dem Stundenplan kann man in die nächste und vorherige Woche wechseln und zwischen den Pfeilen sieht man das Datum und des jeweils ersten Tages in der Woche.</p>
     
     </div>"""
     
@@ -125,8 +125,8 @@ def index():
     return html
     
 
-@app.route("/selecting_subjects", methods=["GET", "POST"])
-def selecting_subjects():
+@app.route("/Faecherauswahl", methods=["GET", "POST"])
+def Faecherauswahl():
     start_date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
     
     try:
@@ -159,8 +159,8 @@ def selecting_subjects():
 
     navbar_html_element = """<a class="homepage-navbar-link" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
     for i in range(len(blocked_ids_file)):
-        navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
-    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
+        navbar_html_element += f"""<a class="links-navbar" href="/personalisierter_Stundenplan/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+    navbar_html_element += """<a class="links-navbar active" href="/Faecherauswahl"><p><img class="plus-sign" src="/static/plus-sign.png"></p></a>"""
     
 
     try:
@@ -214,7 +214,7 @@ def selecting_subjects():
             timetable_html_element += "</div>"
         
     timetable_html_element += "</div>"
-    timetable_html_element += """<input class="submit_timetable"type="submit" value="Submit">"""
+    timetable_html_element += """<input class="submit_timetable"type="submit" value="Erstellen">"""
     timetable_html_element += "</form>"
             
             
@@ -330,11 +330,11 @@ def save_timetable():
     except:
         index = 0
     
-    return flask.redirect("/personalized_timetable/"+str(profile_name))
+    return flask.redirect("/personalisierter_Stundenplan/"+str(profile_name))
     
 
 
-@app.route("/personalized_timetable/<profile_name>", methods=["GET", "POST"])
+@app.route("/personalisierter_Stundenplan/<profile_name>", methods=["GET", "POST"])
 def selected_subjects(profile_name):
     start_date = str(datetime.date.today() - datetime.timedelta(days=int(datetime.date.weekday(datetime.date.today())))+ datetime.timedelta(days=date_counter))
     formatted_date = start_date[8:10] + "." + start_date[5:7] + "." + start_date[0:4]
@@ -372,10 +372,10 @@ def selected_subjects(profile_name):
     navbar_html_element = """<a class="homepage-navbar-link" href="/"><img class="homepage-navbar-image" src="/static/logo.png"></a>"""
     for i in range(len(blocked_ids_file)):
         if i == int(profile_number):
-            navbar_html_element += f"""<a class="links-navbar active" href="/personalized_timetable/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+            navbar_html_element += f"""<a class="links-navbar active" href="/personalisierter_Stundenplan/{blocked_ids_file[i]["name"]}" title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
         else:
-            navbar_html_element += f"""<a class="links-navbar" href="/personalized_timetable/{blocked_ids_file[i]["name"]}"title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
-    navbar_html_element += """<a class="links-navbar" href="/selecting_subjects"><p>+</p></a>"""
+            navbar_html_element += f"""<a class="links-navbar" href="/personalisierter_Stundenplan/{blocked_ids_file[i]["name"]}"title="{blocked_ids_file[i]["name"]}"><p>{blocked_ids_file[i]["name"][0]}</p></a>"""
+    navbar_html_element += """<a class="links-navbar" href="/Faecherauswahl"><p><img class="plus-sign" src="/static/plus-sign.png"></p></a>"""
         
             
     
@@ -558,7 +558,7 @@ def date_counter_subtract(number):
         blocked_ids = json.load(file)
     name = blocked_ids[int(number)]["name"]
     
-    return flask.redirect("/personalized_timetable/"+name)
+    return flask.redirect("/personalisierter_Stundenplan/"+name)
 
 @app.route("/date_counter_add/<number>", methods=["GET", "POST"])
 def date_counter_add (number):
@@ -568,7 +568,7 @@ def date_counter_add (number):
         blocked_ids = json.load(file)
     name = blocked_ids[int(number)]["name"]
     
-    return flask.redirect("/personalized_timetable/"+name)
+    return flask.redirect("/personalisierter_Stundenplan/"+name)
 
 if __name__ == "__main__":
     app.run(debug=True)
