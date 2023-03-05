@@ -133,6 +133,23 @@ body {
     background: var(--main-color-hover);
 }
 
+.links-navbar:hover > p{
+    animation: grow-text 0.12s 0s forwards ease-in-out;
+}
+
+.links-navbar.active:hover > p{
+    animation: none;
+}
+
+@keyframes grow-text {
+    0% {
+        font-size: 1.5rem;
+    }
+    100% {
+        font-size: 2.2rem;
+    }
+}
+
 .links-navbar:hover > p > .plus-sign{
     animation: grow-plus 0.2s forwards ease-in-out;
 }
