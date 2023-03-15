@@ -4,9 +4,6 @@ import datetime
 import itertools
 
 
-### WEBUNTIS REQUEST ###
-
-
 class WebUntis_request:
     def __init__(self, element_type, element_id, date, schoolname):
         self.element_type = str(element_type)
@@ -116,4 +113,3 @@ class WebUntis_request:
 if __name__ == "__main__":
     WebUntis_request(1, 475, "2023-02-20", "hh5864").API_call()
     WebUntis_request(1, 187, "2023-02-20", "hh5846").API_call()
-      

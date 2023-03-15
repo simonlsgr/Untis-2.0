@@ -1,41 +1,1245 @@
 [
     [
         [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ],
-    [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ],
-    [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
+        [
+            {
+                "id": 366025,
+                "lessonId": 14953,
+                "lessonNumber": 61002,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "Aufgaben auf itslearning",
+                "hasPeriodText": true,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "Aufgaben auf itslearning",
+                "date": 20230320,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 589,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": true,
+                "code": 0,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
+                "is": {
+                    "substitution": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 08:55:00"
+            },
+            {
+                "id": 368245,
+                "lessonId": 14968,
+                "lessonNumber": 61000,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 596,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 08:55:00"
+            },
+            {
+                "id": 369715,
+                "lessonId": 14978,
+                "lessonNumber": 61001,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 597,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 08:55:00"
+            }
+        ],
+        [
+            {
+                "id": 366030,
+                "lessonId": 14953,
+                "lessonNumber": 61002,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "EVA",
+                "hasPeriodText": true,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "EVA",
+                "date": 20230320,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 589,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": true,
+                "code": 0,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
+                "is": {
+                    "substitution": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 09:40:00"
+            },
+            {
+                "id": 368250,
+                "lessonId": 14968,
+                "lessonNumber": 61000,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 596,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 09:40:00"
+            },
+            {
+                "id": 369720,
+                "lessonId": 14978,
+                "lessonNumber": 61001,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 597,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 09:40:00"
+            }
+        ],
+        [
+            {
+                "id": 270680,
+                "lessonId": 13934,
+                "lessonNumber": 61105,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 198,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 10:45:00"
+            },
+            {
+                "id": 338355,
+                "lessonId": 14729,
+                "lessonNumber": 61101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 541,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 10:45:00"
+            },
+            {
+                "id": 343045,
+                "lessonId": 14769,
+                "lessonNumber": 61102,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 546,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 10:45:00"
+            },
+            {
+                "id": 344995,
+                "lessonId": 14789,
+                "lessonNumber": 61104,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 549,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 10:45:00"
+            },
+            {
+                "id": 384770,
+                "lessonId": 15163,
+                "lessonNumber": 61100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 652,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 10:45:00"
+            }
+        ],
+        [
+            {
+                "id": 270685,
+                "lessonId": 13934,
+                "lessonNumber": 61105,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 198,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 11:30:00"
+            },
+            {
+                "id": 338360,
+                "lessonId": 14729,
+                "lessonNumber": 61101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 541,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 11:30:00"
+            },
+            {
+                "id": 343050,
+                "lessonId": 14769,
+                "lessonNumber": 61102,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 546,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 11:30:00"
+            },
+            {
+                "id": 345000,
+                "lessonId": 14789,
+                "lessonNumber": 61104,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 549,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 11:30:00"
+            },
+            {
+                "id": 384775,
+                "lessonId": 15163,
+                "lessonNumber": 61100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 652,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 11:30:00"
+            }
+        ],
+        [
+            {
+                "id": 272210,
+                "lessonId": 13944,
+                "lessonNumber": 61203,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 209,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:05:00"
+            },
+            {
+                "id": 375730,
+                "lessonId": 15048,
+                "lessonNumber": 61200,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 621,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:05:00"
+            },
+            {
+                "id": 377680,
+                "lessonId": 15073,
+                "lessonNumber": 61201,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 629,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:05:00"
+            },
+            {
+                "id": 378430,
+                "lessonId": 15083,
+                "lessonNumber": 61202,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 630,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:05:00"
+            }
+        ],
+        [
+            {
+                "id": 272215,
+                "lessonId": 13944,
+                "lessonNumber": 61203,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 209,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:55:00"
+            },
+            {
+                "id": 375735,
+                "lessonId": 15048,
+                "lessonNumber": 61200,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 621,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:55:00"
+            },
+            {
+                "id": 377685,
+                "lessonId": 15073,
+                "lessonNumber": 61201,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 629,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:55:00"
+            },
+            {
+                "id": 378435,
+                "lessonId": 15083,
+                "lessonNumber": 61202,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 630,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 13:55:00"
+            }
+        ],
+        [
+            {
+                "id": 379550,
+                "lessonId": 15098,
+                "lessonNumber": 61301,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 633,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 197,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 14:45:00"
+            },
+            {
+                "id": 391220,
+                "lessonId": 15240,
+                "lessonNumber": 61300,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 671,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 14:45:00"
+            }
+        ],
+        [
+            {
+                "id": 379555,
+                "lessonId": 15098,
+                "lessonNumber": 61301,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 633,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 197,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 15:30:00"
+            },
+            {
+                "id": 391225,
+                "lessonId": 15240,
+                "lessonNumber": 61300,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230320,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 671,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-20 15:30:00"
+            }
+        ]
     ],
     [
         [
             {
-                "id": 383800,
+                "id": 376900,
+                "lessonId": 15063,
+                "lessonNumber": 60701,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 800,
+                "endTime": 845,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 625,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 184,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:00:00"
+            },
+            {
+                "id": 383805,
                 "lessonId": 15153,
                 "lessonNumber": 60600,
                 "lessonCode": "LESSON",
@@ -45,7 +1249,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230321,
                 "startTime": 800,
                 "endTime": 845,
                 "elements": [
@@ -74,12 +1278,2010 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 08:00:00"
+                "datetime_start": "2023-03-21 08:00:00"
             }
         ],
         [
             {
-                "id": 351645,
+                "id": 267165,
+                "lessonId": 13894,
+                "lessonNumber": 61501,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 80,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 193,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:55:00"
+            },
+            {
+                "id": 270690,
+                "lessonId": 13934,
+                "lessonNumber": 61105,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 198,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:55:00"
+            },
+            {
+                "id": 343055,
+                "lessonId": 14769,
+                "lessonNumber": 61102,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 546,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:55:00"
+            },
+            {
+                "id": 347865,
+                "lessonId": 14809,
+                "lessonNumber": 61505,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 551,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:55:00"
+            },
+            {
+                "id": 384780,
+                "lessonId": 15163,
+                "lessonNumber": 61100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 652,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 08:55:00"
+            }
+        ],
+        [
+            {
+                "id": 267170,
+                "lessonId": 13894,
+                "lessonNumber": 61501,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 80,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 193,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 09:40:00"
+            },
+            {
+                "id": 270695,
+                "lessonId": 13934,
+                "lessonNumber": 61105,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 198,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 09:40:00"
+            },
+            {
+                "id": 343060,
+                "lessonId": 14769,
+                "lessonNumber": 61102,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 546,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 09:40:00"
+            },
+            {
+                "id": 347870,
+                "lessonId": 14809,
+                "lessonNumber": 61505,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 551,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 09:40:00"
+            },
+            {
+                "id": 384785,
+                "lessonId": 15163,
+                "lessonNumber": 61100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 652,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 09:40:00"
+            }
+        ],
+        [
+            {
+                "id": 335365,
+                "lessonId": 14704,
+                "lessonNumber": 62800,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 534,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 10:45:00"
+            },
+            {
+                "id": 338365,
+                "lessonId": 14729,
+                "lessonNumber": 61101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 541,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 10:45:00"
+            },
+            {
+                "id": 341485,
+                "lessonId": 14759,
+                "lessonNumber": 62802,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 545,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 10:45:00"
+            },
+            {
+                "id": 346555,
+                "lessonId": 14799,
+                "lessonNumber": 62803,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 550,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 169,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 10:45:00"
+            },
+            {
+                "id": 348895,
+                "lessonId": 14819,
+                "lessonNumber": 62804,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 556,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 10:45:00"
+            }
+        ],
+        [
+            {
+                "id": 335370,
+                "lessonId": 14704,
+                "lessonNumber": 62800,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 534,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 309,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 11:30:00"
+            },
+            {
+                "id": 338370,
+                "lessonId": 14729,
+                "lessonNumber": 61101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 541,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 11:30:00"
+            },
+            {
+                "id": 341490,
+                "lessonId": 14759,
+                "lessonNumber": 62802,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 545,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 11:30:00"
+            },
+            {
+                "id": 346560,
+                "lessonId": 14799,
+                "lessonNumber": 62803,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 550,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 169,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 11:30:00"
+            },
+            {
+                "id": 348900,
+                "lessonId": 14819,
+                "lessonNumber": 62804,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 556,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 11:30:00"
+            }
+        ],
+        [
+            {
+                "id": 334565,
+                "lessonId": 14694,
+                "lessonNumber": 61600,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 533,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:05:00"
+            },
+            {
+                "id": 340455,
+                "lessonId": 14749,
+                "lessonNumber": 61601,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 543,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:05:00"
+            },
+            {
+                "id": 343975,
+                "lessonId": 14779,
+                "lessonNumber": 61602,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 548,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:05:00"
+            },
+            {
+                "id": 345005,
+                "lessonId": 14789,
+                "lessonNumber": 61104,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 549,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:05:00"
+            },
+            {
+                "id": 349435,
+                "lessonId": 14824,
+                "lessonNumber": 61604,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 557,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:05:00"
+            }
+        ],
+        [
+            {
+                "id": 334570,
+                "lessonId": 14694,
+                "lessonNumber": 61600,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 533,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:55:00"
+            },
+            {
+                "id": 340460,
+                "lessonId": 14749,
+                "lessonNumber": 61601,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 543,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:55:00"
+            },
+            {
+                "id": 343980,
+                "lessonId": 14779,
+                "lessonNumber": 61602,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 548,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 190,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:55:00"
+            },
+            {
+                "id": 345010,
+                "lessonId": 14789,
+                "lessonNumber": 61104,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 549,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:55:00"
+            },
+            {
+                "id": 349440,
+                "lessonId": 14824,
+                "lessonNumber": 61604,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 557,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 13:55:00"
+            }
+        ],
+        [
+            {
+                "id": 276200,
+                "lessonId": 14029,
+                "lessonNumber": 61703,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 256,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 14:45:00"
+            },
+            {
+                "id": 282125,
+                "lessonId": 14099,
+                "lessonNumber": 61702,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 304,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 14:45:00"
+            },
+            {
+                "id": 333255,
+                "lessonId": 14684,
+                "lessonNumber": 61700,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "Aufgaben auf itslearning",
+                "hasPeriodText": true,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "Aufgaben auf itslearning",
+                "date": 20230321,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 532,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": true,
+                "code": 0,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
+                "is": {
+                    "substitution": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 14:45:00"
+            },
+            {
+                "id": 339655,
+                "lessonId": 14739,
+                "lessonNumber": 61701,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1445,
+                "endTime": 1530,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 542,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 14:45:00"
+            }
+        ],
+        [
+            {
+                "id": 276205,
+                "lessonId": 14029,
+                "lessonNumber": 61703,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 256,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 15:30:00"
+            },
+            {
+                "id": 282130,
+                "lessonId": 14099,
+                "lessonNumber": 61702,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 304,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 15:30:00"
+            },
+            {
+                "id": 333260,
+                "lessonId": 14684,
+                "lessonNumber": 61700,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "EVA",
+                "hasPeriodText": true,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "EVA",
+                "date": 20230321,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 532,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 183,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": true,
+                "code": 0,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
+                "is": {
+                    "substitution": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 15:30:00"
+            },
+            {
+                "id": 339660,
+                "lessonId": 14739,
+                "lessonNumber": 61701,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230321,
+                "startTime": 1530,
+                "endTime": 1615,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 542,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-21 15:30:00"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "id": 376905,
+                "lessonId": 15063,
+                "lessonNumber": 60701,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 800,
+                "endTime": 845,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 625,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 184,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 08:00:00"
+            }
+        ],
+        [
+            {
+                "id": 359865,
+                "lessonId": 14904,
+                "lessonNumber": 61901,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 580,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 08:55:00"
+            },
+            {
+                "id": 360665,
+                "lessonId": 14909,
+                "lessonNumber": 61903,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 581,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 08:55:00"
+            },
+            {
+                "id": 362215,
+                "lessonId": 14918,
+                "lessonNumber": 61902,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 582,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 176,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 08:55:00"
+            },
+            {
+                "id": 363765,
+                "lessonId": 14928,
+                "lessonNumber": 61900,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 855,
+                "endTime": 940,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 584,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 08:55:00"
+            }
+        ],
+        [
+            {
+                "id": 359870,
+                "lessonId": 14904,
+                "lessonNumber": 61901,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 580,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 09:40:00"
+            },
+            {
+                "id": 360670,
+                "lessonId": 14909,
+                "lessonNumber": 61903,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 581,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 186,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 09:40:00"
+            },
+            {
+                "id": 362220,
+                "lessonId": 14918,
+                "lessonNumber": 61902,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 582,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 176,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 09:40:00"
+            },
+            {
+                "id": 363770,
+                "lessonId": 14928,
+                "lessonNumber": 61900,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 940,
+                "endTime": 1025,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 584,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 09:40:00"
+            }
+        ],
+        [
+            {
+                "id": 351655,
                 "lessonId": 14844,
                 "lessonNumber": 62001,
                 "lessonCode": "LESSON",
@@ -89,7 +3291,735 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230322,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 566,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 191,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 10:45:00"
+            },
+            {
+                "id": 352455,
+                "lessonId": 14849,
+                "lessonNumber": 62002,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 567,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 10:45:00"
+            },
+            {
+                "id": 354025,
+                "lessonId": 14859,
+                "lessonNumber": 62003,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 568,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 10:45:00"
+            },
+            {
+                "id": 355595,
+                "lessonId": 14869,
+                "lessonNumber": 62000,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1045,
+                "endTime": 1130,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 570,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 10:45:00"
+            }
+        ],
+        [
+            {
+                "id": 351660,
+                "lessonId": 14844,
+                "lessonNumber": 62001,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 566,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 191,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 11:30:00"
+            },
+            {
+                "id": 352460,
+                "lessonId": 14849,
+                "lessonNumber": 62002,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 567,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 192,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 11:30:00"
+            },
+            {
+                "id": 354030,
+                "lessonId": 14859,
+                "lessonNumber": 62003,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 568,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 182,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 11:30:00"
+            },
+            {
+                "id": 355600,
+                "lessonId": 14869,
+                "lessonNumber": 62000,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1130,
+                "endTime": 1215,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 570,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 11:30:00"
+            }
+        ],
+        [
+            {
+                "id": 268755,
+                "lessonId": 13904,
+                "lessonNumber": 62101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 118,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:05:00"
+            },
+            {
+                "id": 372725,
+                "lessonId": 14998,
+                "lessonNumber": 62100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 603,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:05:00"
+            },
+            {
+                "id": 383400,
+                "lessonId": 15148,
+                "lessonNumber": 62601,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 645,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 177,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:05:00"
+            },
+            {
+                "id": 390840,
+                "lessonId": 15235,
+                "lessonNumber": 62603,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1305,
+                "endTime": 1350,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 669,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 534,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:05:00"
+            }
+        ],
+        [
+            {
+                "id": 268760,
+                "lessonId": 13904,
+                "lessonNumber": 62101,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 118,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 185,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:55:00"
+            },
+            {
+                "id": 372730,
+                "lessonId": 14998,
+                "lessonNumber": 62100,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 603,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 181,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:55:00"
+            },
+            {
+                "id": 383405,
+                "lessonId": 15148,
+                "lessonNumber": 62601,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 645,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 177,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:55:00"
+            },
+            {
+                "id": 390845,
+                "lessonId": 15235,
+                "lessonNumber": 62603,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230322,
+                "startTime": 1355,
+                "endTime": 1440,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 669,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 534,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-22 13:55:00"
+            }
+        ],
+        [],
+        []
+    ],
+    [
+        [
+            {
+                "id": 383810,
+                "lessonId": 15153,
+                "lessonNumber": 60600,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230323,
+                "startTime": 800,
+                "endTime": 845,
+                "elements": [
+                    {
+                        "type": 3,
+                        "id": 646,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    },
+                    {
+                        "type": 4,
+                        "id": 180,
+                        "orgId": 0,
+                        "missing": false,
+                        "state": "REGULAR"
+                    }
+                ],
+                "hasInfo": false,
+                "code": 0,
+                "cellState": "STANDARD",
+                "priority": 5,
+                "is": {
+                    "standard": true,
+                    "event": false
+                },
+                "roomCapacity": 0,
+                "studentCount": 0,
+                "datetime_start": "2023-03-23 08:00:00"
+            }
+        ],
+        [
+            {
+                "id": 351665,
+                "lessonId": 14844,
+                "lessonNumber": 62001,
+                "lessonCode": "LESSON",
+                "lessonText": "",
+                "periodText": "",
+                "hasPeriodText": false,
+                "periodInfo": "",
+                "periodAttachments": [],
+                "substText": "",
+                "date": 20230323,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -118,10 +4048,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 08:55:00"
+                "datetime_start": "2023-03-23 08:55:00"
             },
             {
-                "id": 352445,
+                "id": 352465,
                 "lessonId": 14849,
                 "lessonNumber": 62002,
                 "lessonCode": "LESSON",
@@ -131,7 +4061,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -160,10 +4090,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 08:55:00"
+                "datetime_start": "2023-03-23 08:55:00"
             },
             {
-                "id": 354015,
+                "id": 354035,
                 "lessonId": 14859,
                 "lessonNumber": 62003,
                 "lessonCode": "LESSON",
@@ -173,7 +4103,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -202,20 +4132,20 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 08:55:00"
+                "datetime_start": "2023-03-23 08:55:00"
             },
             {
-                "id": 355585,
+                "id": 355605,
                 "lessonId": 14869,
                 "lessonNumber": 62000,
                 "lessonCode": "LESSON",
                 "lessonText": "",
-                "periodText": "Aufgaben auf itslearning",
-                "hasPeriodText": true,
+                "periodText": "",
+                "hasPeriodText": false,
                 "periodInfo": "",
                 "periodAttachments": [],
-                "substText": "Aufgaben auf itslearning",
-                "date": 20230302,
+                "substText": "",
+                "date": 20230323,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -228,28 +4158,28 @@
                     },
                     {
                         "type": 4,
-                        "id": 485,
-                        "orgId": 185,
+                        "id": 185,
+                        "orgId": 0,
                         "missing": false,
-                        "state": "SUBSTITUTED"
+                        "state": "REGULAR"
                     }
                 ],
-                "hasInfo": true,
+                "hasInfo": false,
                 "code": 0,
-                "cellState": "SUBSTITUTION",
-                "priority": 3,
+                "cellState": "STANDARD",
+                "priority": 5,
                 "is": {
-                    "substitution": true,
+                    "standard": true,
                     "event": false
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 08:55:00"
+                "datetime_start": "2023-03-23 08:55:00"
             }
         ],
         [
             {
-                "id": 351650,
+                "id": 351670,
                 "lessonId": 14844,
                 "lessonNumber": 62001,
                 "lessonCode": "LESSON",
@@ -259,7 +4189,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -288,10 +4218,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 09:40:00"
+                "datetime_start": "2023-03-23 09:40:00"
             },
             {
-                "id": 352450,
+                "id": 352470,
                 "lessonId": 14849,
                 "lessonNumber": 62002,
                 "lessonCode": "LESSON",
@@ -301,7 +4231,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -330,10 +4260,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 09:40:00"
+                "datetime_start": "2023-03-23 09:40:00"
             },
             {
-                "id": 354020,
+                "id": 354040,
                 "lessonId": 14859,
                 "lessonNumber": 62003,
                 "lessonCode": "LESSON",
@@ -343,7 +4273,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -372,20 +4302,20 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 09:40:00"
+                "datetime_start": "2023-03-23 09:40:00"
             },
             {
-                "id": 355590,
+                "id": 355610,
                 "lessonId": 14869,
                 "lessonNumber": 62000,
                 "lessonCode": "LESSON",
                 "lessonText": "",
-                "periodText": "Aufgaben auf itslearning",
-                "hasPeriodText": true,
+                "periodText": "",
+                "hasPeriodText": false,
                 "periodInfo": "",
                 "periodAttachments": [],
-                "substText": "Aufgaben auf itslearning",
-                "date": 20230302,
+                "substText": "",
+                "date": 20230323,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -398,28 +4328,28 @@
                     },
                     {
                         "type": 4,
-                        "id": 485,
-                        "orgId": 185,
+                        "id": 185,
+                        "orgId": 0,
                         "missing": false,
-                        "state": "SUBSTITUTED"
+                        "state": "REGULAR"
                     }
                 ],
-                "hasInfo": true,
+                "hasInfo": false,
                 "code": 0,
-                "cellState": "SUBSTITUTION",
-                "priority": 3,
+                "cellState": "STANDARD",
+                "priority": 5,
                 "is": {
-                    "substitution": true,
+                    "standard": true,
                     "event": false
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 09:40:00"
+                "datetime_start": "2023-03-23 09:40:00"
             }
         ],
         [
             {
-                "id": 359855,
+                "id": 359875,
                 "lessonId": 14904,
                 "lessonNumber": 61901,
                 "lessonCode": "LESSON",
@@ -429,7 +4359,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -458,10 +4388,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 10:45:00"
+                "datetime_start": "2023-03-23 10:45:00"
             },
             {
-                "id": 360655,
+                "id": 360675,
                 "lessonId": 14909,
                 "lessonNumber": 61903,
                 "lessonCode": "LESSON",
@@ -471,7 +4401,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -500,10 +4430,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 10:45:00"
+                "datetime_start": "2023-03-23 10:45:00"
             },
             {
-                "id": 362205,
+                "id": 362225,
                 "lessonId": 14918,
                 "lessonNumber": 61902,
                 "lessonCode": "LESSON",
@@ -513,7 +4443,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -542,10 +4472,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 10:45:00"
+                "datetime_start": "2023-03-23 10:45:00"
             },
             {
-                "id": 363755,
+                "id": 363775,
                 "lessonId": 14928,
                 "lessonNumber": 61900,
                 "lessonCode": "LESSON",
@@ -555,7 +4485,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -584,12 +4514,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 10:45:00"
+                "datetime_start": "2023-03-23 10:45:00"
             }
         ],
         [
             {
-                "id": 359860,
+                "id": 359880,
                 "lessonId": 14904,
                 "lessonNumber": 61901,
                 "lessonCode": "LESSON",
@@ -599,7 +4529,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -628,10 +4558,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 11:30:00"
+                "datetime_start": "2023-03-23 11:30:00"
             },
             {
-                "id": 360660,
+                "id": 360680,
                 "lessonId": 14909,
                 "lessonNumber": 61903,
                 "lessonCode": "LESSON",
@@ -641,7 +4571,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -670,10 +4600,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 11:30:00"
+                "datetime_start": "2023-03-23 11:30:00"
             },
             {
-                "id": 362210,
+                "id": 362230,
                 "lessonId": 14918,
                 "lessonNumber": 61902,
                 "lessonCode": "LESSON",
@@ -683,7 +4613,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -712,10 +4642,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 11:30:00"
+                "datetime_start": "2023-03-23 11:30:00"
             },
             {
-                "id": 363760,
+                "id": 363780,
                 "lessonId": 14928,
                 "lessonNumber": 61900,
                 "lessonCode": "LESSON",
@@ -725,7 +4655,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -754,12 +4684,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 11:30:00"
+                "datetime_start": "2023-03-23 11:30:00"
             }
         ],
         [
             {
-                "id": 272200,
+                "id": 272220,
                 "lessonId": 13944,
                 "lessonNumber": 61203,
                 "lessonCode": "LESSON",
@@ -769,7 +4699,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -798,10 +4728,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:05:00"
+                "datetime_start": "2023-03-23 13:05:00"
             },
             {
-                "id": 388340,
+                "id": 388350,
                 "lessonId": 15203,
                 "lessonNumber": 62500,
                 "lessonCode": "LESSON",
@@ -811,7 +4741,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -840,10 +4770,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:05:00"
+                "datetime_start": "2023-03-23 13:05:00"
             },
             {
-                "id": 388740,
+                "id": 388750,
                 "lessonId": 15208,
                 "lessonNumber": 62501,
                 "lessonCode": "LESSON",
@@ -853,7 +4783,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -882,12 +4812,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:05:00"
+                "datetime_start": "2023-03-23 13:05:00"
             }
         ],
         [
             {
-                "id": 272205,
+                "id": 272225,
                 "lessonId": 13944,
                 "lessonNumber": 61203,
                 "lessonCode": "LESSON",
@@ -897,7 +4827,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -926,10 +4856,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:55:00"
+                "datetime_start": "2023-03-23 13:55:00"
             },
             {
-                "id": 388345,
+                "id": 388355,
                 "lessonId": 15203,
                 "lessonNumber": 62500,
                 "lessonCode": "LESSON",
@@ -939,7 +4869,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -968,10 +4898,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:55:00"
+                "datetime_start": "2023-03-23 13:55:00"
             },
             {
-                "id": 388745,
+                "id": 388755,
                 "lessonId": 15208,
                 "lessonNumber": 62501,
                 "lessonCode": "LESSON",
@@ -981,7 +4911,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -1010,12 +4940,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 13:55:00"
+                "datetime_start": "2023-03-23 13:55:00"
             }
         ],
         [
             {
-                "id": 268745,
+                "id": 268765,
                 "lessonId": 13904,
                 "lessonNumber": 62101,
                 "lessonCode": "LESSON",
@@ -1025,7 +4955,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1445,
                 "endTime": 1530,
                 "elements": [
@@ -1054,10 +4984,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 14:45:00"
+                "datetime_start": "2023-03-23 14:45:00"
             },
             {
-                "id": 372715,
+                "id": 372735,
                 "lessonId": 14998,
                 "lessonNumber": 62100,
                 "lessonCode": "LESSON",
@@ -1067,7 +4997,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1445,
                 "endTime": 1530,
                 "elements": [
@@ -1096,10 +5026,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 14:45:00"
+                "datetime_start": "2023-03-23 14:45:00"
             },
             {
-                "id": 375350,
+                "id": 375360,
                 "lessonId": 15043,
                 "lessonNumber": 62102,
                 "lessonCode": "LESSON",
@@ -1109,7 +5039,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1445,
                 "endTime": 1530,
                 "elements": [
@@ -1138,12 +5068,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 14:45:00"
+                "datetime_start": "2023-03-23 14:45:00"
             }
         ],
         [
             {
-                "id": 268750,
+                "id": 268770,
                 "lessonId": 13904,
                 "lessonNumber": 62101,
                 "lessonCode": "LESSON",
@@ -1153,7 +5083,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1530,
                 "endTime": 1615,
                 "elements": [
@@ -1182,10 +5112,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 15:30:00"
+                "datetime_start": "2023-03-23 15:30:00"
             },
             {
-                "id": 372720,
+                "id": 372740,
                 "lessonId": 14998,
                 "lessonNumber": 62100,
                 "lessonCode": "LESSON",
@@ -1195,7 +5125,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1530,
                 "endTime": 1615,
                 "elements": [
@@ -1224,10 +5154,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 15:30:00"
+                "datetime_start": "2023-03-23 15:30:00"
             },
             {
-                "id": 375355,
+                "id": 375365,
                 "lessonId": 15043,
                 "lessonNumber": 62102,
                 "lessonCode": "LESSON",
@@ -1237,7 +5167,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230302,
+                "date": 20230323,
                 "startTime": 1530,
                 "endTime": 1615,
                 "elements": [
@@ -1266,7 +5196,7 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-02 15:30:00"
+                "datetime_start": "2023-03-23 15:30:00"
             }
         ]
     ],
@@ -1274,7 +5204,7 @@
         [],
         [
             {
-                "id": 267155,
+                "id": 267175,
                 "lessonId": 13894,
                 "lessonNumber": 61501,
                 "lessonCode": "LESSON",
@@ -1284,7 +5214,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -1313,20 +5243,20 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 08:55:00"
+                "datetime_start": "2023-03-24 08:55:00"
             },
             {
-                "id": 333245,
+                "id": 333265,
                 "lessonId": 14684,
                 "lessonNumber": 61700,
                 "lessonCode": "LESSON",
                 "lessonText": "",
-                "periodText": "",
-                "hasPeriodText": false,
+                "periodText": "Aufgaben auf itslearning",
+                "hasPeriodText": true,
                 "periodInfo": "",
                 "periodAttachments": [],
-                "substText": "",
-                "date": 20230303,
+                "substText": "Aufgaben auf itslearning",
+                "date": 20230324,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -1345,20 +5275,20 @@
                         "state": "REGULAR"
                     }
                 ],
-                "hasInfo": false,
+                "hasInfo": true,
                 "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
                 "is": {
-                    "standard": true,
+                    "substitution": true,
                     "event": false
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 08:55:00"
+                "datetime_start": "2023-03-24 08:55:00"
             },
             {
-                "id": 341475,
+                "id": 341495,
                 "lessonId": 14759,
                 "lessonNumber": 62802,
                 "lessonCode": "LESSON",
@@ -1368,7 +5298,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -1397,10 +5327,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 08:55:00"
+                "datetime_start": "2023-03-24 08:55:00"
             },
             {
-                "id": 346545,
+                "id": 346565,
                 "lessonId": 14799,
                 "lessonNumber": 62803,
                 "lessonCode": "LESSON",
@@ -1410,7 +5340,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -1439,10 +5369,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 08:55:00"
+                "datetime_start": "2023-03-24 08:55:00"
             },
             {
-                "id": 348885,
+                "id": 348905,
                 "lessonId": 14819,
                 "lessonNumber": 62804,
                 "lessonCode": "LESSON",
@@ -1452,7 +5382,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 855,
                 "endTime": 940,
                 "elements": [
@@ -1481,12 +5411,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 08:55:00"
+                "datetime_start": "2023-03-24 08:55:00"
             }
         ],
         [
             {
-                "id": 267160,
+                "id": 267180,
                 "lessonId": 13894,
                 "lessonNumber": 61501,
                 "lessonCode": "LESSON",
@@ -1496,7 +5426,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -1525,20 +5455,20 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 09:40:00"
+                "datetime_start": "2023-03-24 09:40:00"
             },
             {
-                "id": 333250,
+                "id": 333270,
                 "lessonId": 14684,
                 "lessonNumber": 61700,
                 "lessonCode": "LESSON",
                 "lessonText": "",
-                "periodText": "",
-                "hasPeriodText": false,
+                "periodText": "EVA",
+                "hasPeriodText": true,
                 "periodInfo": "",
                 "periodAttachments": [],
-                "substText": "",
-                "date": 20230303,
+                "substText": "EVA",
+                "date": 20230324,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -1557,20 +5487,20 @@
                         "state": "REGULAR"
                     }
                 ],
-                "hasInfo": false,
+                "hasInfo": true,
                 "code": 0,
-                "cellState": "STANDARD",
-                "priority": 5,
+                "cellState": "SUBSTITUTION",
+                "priority": 3,
                 "is": {
-                    "standard": true,
+                    "substitution": true,
                     "event": false
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 09:40:00"
+                "datetime_start": "2023-03-24 09:40:00"
             },
             {
-                "id": 341480,
+                "id": 341500,
                 "lessonId": 14759,
                 "lessonNumber": 62802,
                 "lessonCode": "LESSON",
@@ -1580,7 +5510,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -1609,10 +5539,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 09:40:00"
+                "datetime_start": "2023-03-24 09:40:00"
             },
             {
-                "id": 346550,
+                "id": 346570,
                 "lessonId": 14799,
                 "lessonNumber": 62803,
                 "lessonCode": "LESSON",
@@ -1622,7 +5552,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -1651,10 +5581,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 09:40:00"
+                "datetime_start": "2023-03-24 09:40:00"
             },
             {
-                "id": 348890,
+                "id": 348910,
                 "lessonId": 14819,
                 "lessonNumber": 62804,
                 "lessonCode": "LESSON",
@@ -1664,7 +5594,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 940,
                 "endTime": 1025,
                 "elements": [
@@ -1693,12 +5623,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 09:40:00"
+                "datetime_start": "2023-03-24 09:40:00"
             }
         ],
         [
             {
-                "id": 366015,
+                "id": 366035,
                 "lessonId": 14953,
                 "lessonNumber": 61002,
                 "lessonCode": "LESSON",
@@ -1708,7 +5638,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -1737,10 +5667,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 10:45:00"
+                "datetime_start": "2023-03-24 10:45:00"
             },
             {
-                "id": 368235,
+                "id": 368255,
                 "lessonId": 14968,
                 "lessonNumber": 61000,
                 "lessonCode": "LESSON",
@@ -1750,7 +5680,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -1779,10 +5709,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 10:45:00"
+                "datetime_start": "2023-03-24 10:45:00"
             },
             {
-                "id": 369705,
+                "id": 369725,
                 "lessonId": 14978,
                 "lessonNumber": 61001,
                 "lessonCode": "LESSON",
@@ -1792,7 +5722,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1045,
                 "endTime": 1130,
                 "elements": [
@@ -1821,12 +5751,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 10:45:00"
+                "datetime_start": "2023-03-24 10:45:00"
             }
         ],
         [
             {
-                "id": 366020,
+                "id": 366040,
                 "lessonId": 14953,
                 "lessonNumber": 61002,
                 "lessonCode": "LESSON",
@@ -1836,7 +5766,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -1865,10 +5795,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 11:30:00"
+                "datetime_start": "2023-03-24 11:30:00"
             },
             {
-                "id": 368240,
+                "id": 368260,
                 "lessonId": 14968,
                 "lessonNumber": 61000,
                 "lessonCode": "LESSON",
@@ -1878,7 +5808,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -1907,10 +5837,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 11:30:00"
+                "datetime_start": "2023-03-24 11:30:00"
             },
             {
-                "id": 369710,
+                "id": 369730,
                 "lessonId": 14978,
                 "lessonNumber": 61001,
                 "lessonCode": "LESSON",
@@ -1920,7 +5850,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1130,
                 "endTime": 1215,
                 "elements": [
@@ -1949,12 +5879,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 11:30:00"
+                "datetime_start": "2023-03-24 11:30:00"
             }
         ],
         [
             {
-                "id": 378780,
+                "id": 378790,
                 "lessonId": 15088,
                 "lessonNumber": 63000,
                 "lessonCode": "LESSON",
@@ -1964,7 +5894,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -1993,10 +5923,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:05:00"
+                "datetime_start": "2023-03-24 13:05:00"
             },
             {
-                "id": 380700,
+                "id": 380710,
                 "lessonId": 15113,
                 "lessonNumber": 63001,
                 "lessonCode": "LESSON",
@@ -2006,7 +5936,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -2035,10 +5965,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:05:00"
+                "datetime_start": "2023-03-24 13:05:00"
             },
             {
-                "id": 381470,
+                "id": 381480,
                 "lessonId": 15123,
                 "lessonNumber": 63004,
                 "lessonCode": "LESSON",
@@ -2048,7 +5978,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -2077,10 +6007,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:05:00"
+                "datetime_start": "2023-03-24 13:05:00"
             },
             {
-                "id": 382240,
+                "id": 382250,
                 "lessonId": 15133,
                 "lessonNumber": 63002,
                 "lessonCode": "LESSON",
@@ -2090,7 +6020,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1305,
                 "endTime": 1350,
                 "elements": [
@@ -2119,12 +6049,12 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:05:00"
+                "datetime_start": "2023-03-24 13:05:00"
             }
         ],
         [
             {
-                "id": 378785,
+                "id": 378795,
                 "lessonId": 15088,
                 "lessonNumber": 63000,
                 "lessonCode": "LESSON",
@@ -2134,7 +6064,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -2163,10 +6093,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:55:00"
+                "datetime_start": "2023-03-24 13:55:00"
             },
             {
-                "id": 380705,
+                "id": 380715,
                 "lessonId": 15113,
                 "lessonNumber": 63001,
                 "lessonCode": "LESSON",
@@ -2176,7 +6106,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -2205,10 +6135,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:55:00"
+                "datetime_start": "2023-03-24 13:55:00"
             },
             {
-                "id": 381475,
+                "id": 381485,
                 "lessonId": 15123,
                 "lessonNumber": 63004,
                 "lessonCode": "LESSON",
@@ -2218,7 +6148,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -2247,10 +6177,10 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:55:00"
+                "datetime_start": "2023-03-24 13:55:00"
             },
             {
-                "id": 382245,
+                "id": 382255,
                 "lessonId": 15133,
                 "lessonNumber": 63002,
                 "lessonCode": "LESSON",
@@ -2260,7 +6190,7 @@
                 "periodInfo": "",
                 "periodAttachments": [],
                 "substText": "",
-                "date": 20230303,
+                "date": 20230324,
                 "startTime": 1355,
                 "endTime": 1440,
                 "elements": [
@@ -2289,7 +6219,7 @@
                 },
                 "roomCapacity": 0,
                 "studentCount": 0,
-                "datetime_start": "2023-03-03 13:55:00"
+                "datetime_start": "2023-03-24 13:55:00"
             }
         ],
         [],

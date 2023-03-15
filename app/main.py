@@ -129,14 +129,15 @@ def index():
 def Faecherauswahl():
     start_date = str(datetime.datetime.now().strftime("%Y-%m-%d"))
     
-    try:
-        Webuntis_request.WebUntis_request(1, 475, start_date, "hh5864").API_call()
-    except:
-        pass
-    try:
-        Webuntis_request.WebUntis_request(1, 187, start_date, "hh5846").API_call()
-    except:
-        pass
+    
+    # try:
+    #     Webuntis_request.WebUntis_request(1, 475, start_date, "hh5864").API_call()
+    # except:
+    #     pass
+    # try:
+    #     Webuntis_request.WebUntis_request(1, 187, start_date, "hh5846").API_call()
+    # except:
+    #     pass
     
     
     
