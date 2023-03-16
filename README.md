@@ -14,7 +14,7 @@
 > ![Profil erstellen](assets/create-profile.png)
 > ## existierendes Profil
 > ![existierendes Profil](assets/existing-profile.png)
+<br>
 
 # Technische Details
-> ## WebUntis 2.0
-> WebUntis 2.0 ist eine Dynamische Website, die mit HTML, CSS und Flask erstellt wurde. Die Daten, also gespeichtere Profile und alte Stundenpläne werden in Form von JSON Dateien gespeichert. Durch den Flask Server kann die Website aufgerufen werden und die Daten werden geladen. Daher könnte der Server theoretisch auf jedem Gerät laufen, auf dem Python und die jeweiligen Pakete installiert sind. Bis jetzt ist die Applikation jedoch nur auf Linux getestet worden. Optimierungen für andere Betriebssysteme sind auf jeden fall noch notwendig.
+> WebUntis 2.0 ist eine lokale dynamische Website, die mit HTML, CSS und Flask erstellt wurde. Die Daten, also gespeichtere Profile und alte Stundenpläne werden in Form von JSON Dateien gespeichert. Durch den Flask Server kann die Website aufgerufen werden und die Daten werden geladen. Daher könnte der Server theoretisch auf jedem Gerät laufen, auf dem Python und die jeweiligen Pakete installiert sind. Bis jetzt ist die Applikation jedoch nur auf Linux getestet worden. Optimierungen für andere Betriebssysteme sind auf jeden fall noch notwendig.
